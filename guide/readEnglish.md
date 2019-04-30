@@ -1,4 +1,4 @@
-# [中文](https://github.com/Memorykill/Memorykill.github.io/new/master/README.md)
+# [中文](https://github.com/Memorykill/Memorykill.github.io)
 # My webside dream
 Wait for me create...
 # Web Route

@@ -1,4 +1,4 @@
-# [English](https://github.com/Memorykill/-web/blob/master/guide/readEnglish.md)
+# [English](https://github.com/Memorykill/Memorykill.github.io/edit/master/guide/readEnglish.md)
 #[Memorykill.github.io](https://memorykill.github.io/)
 [申振升的网站](https://memorykill.github.io/)
 # 想联系我吗？

@@ -5,16 +5,67 @@
   <meta name="Description" Content="申振升的个人博客网站">
   <meta name="Keywords" Content="申振升"/>
   <title>制作者</title>
+  <style>
+  html,body{
+    margin:0;padding:0;
+    width:100%;
+    background:rgb(1,77,103);
+  }
+  a{
+    text-decoration: none;
+    color:rgb(251,178,23);
+  }
+  #Header{    
+    width:100%;
+    height:40px;
+    line-height:40px;
+    font-size:20px;
+    
+  }
+  #Header .list{    
+    width:25%;    
+    text-align:center;
+    float:left;
+  }
+  #Header .list:hover{
+    background:rgb(96,143,159);
+  }
+  #content{
+    height:600px;
+    padding:1px 0 5px 30px;
+    color:rgb(237,223,139);
+  }
+  #content h2{    
+    border-left: 3px solid rgb(251,178,23);    
+  }
+  #footer{
+    width:100%;         
+    text-align:center;
+  }
+      </style>
 </head>
 <body>
+  <div id="Header">
+        <div class="list"><a href="./index.html">主页</a></div>
+        <div class="list"><a href="./page/author.html">作者</a></div>
+        <div class="list"><a href="./page/author.html">作者</a></div>
+        <div class="list"><a href="./page/author.html">作者</a></div>
+  </div> 
+<div id="content">
+  <h2>简历|介绍</h2>  
   <div>
-      <span><a href="https://memorykill.github.io">主页</a></span>
-      <span><a href="https://memorykill.github.io/page/author.html">作者</a></span>
+    <table>
+      <tr><th>基本信息</th></tr>
+      <tr>
+        <th>姓名：</th><td>申振升</td> <th>国家：</th><td>中国</td> <th>年龄：</th><td>18</td>
+      </tr>
+      <tr><th>联系方式</th></tr>
+      <tr>
+        <th>电话：</th><td>+86 13995613643</td> <th>QQ：</th><td>2151057013</td>  <th>邮箱：</th><td>2151057013@qq.cn</td>
+      </tr>
+    </table>
   </div>
-  <div>
-      <ol>
-          <li><a href="../index.html">申振升</a></li>
-      </ol>
-  </div>  
+</div>
+
 </body>
 </html>

@@ -1,0 +1,44 @@
+html,body{
+    margin:0;padding:0;
+    width:100%;
+    background:rgb(1,77,103);
+    font-size:1.2em;
+    color:rgb(237,223,139);
+  }
+  a{
+    text-decoration: none;
+    color:rgb(251,178,23);
+  }
+  #Header{    
+    width:100%;
+    height:60px;
+    line-height:60px;    
+  }  
+  #Header .list{    
+    width:25%;    
+    font-size:45px; 
+    text-align:center;
+    float:left;
+  }
+  #Header .list:hover{
+    background:rgb(96,143,159);
+  }
+  .content{
+    padding:1px 0 5px 30px;    
+  }  
+  .content h2{    
+    border-left: 3px solid rgb(251,178,23);    
+  }
+  
+  #content{
+    height:900px;
+    padding:1px 0 5px 30px;    
+  }  
+  #content h2{    
+    border-left: 3px solid rgb(251,178,23);    
+  }
+  #footer{
+    width:100%;         
+    text-align:center;
+  }	
+  

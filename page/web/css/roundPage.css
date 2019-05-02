@@ -53,8 +53,4 @@
         margin:0 0 0 740px;	
     }
 }
- @media screen and (min-height: 1500px) {
-    body {
-        font-size:2em;
-    }
-  }
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="description" content="申振升申振升申振升最帅"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="og:description" content="申振升，申振升，申振升申振升申振升"/>
+  <meta name="keywords" content="申振升，申振升,申振升"/>  
+  <title>点击机器人</title>
+  <link  rel="stylesheet" href="https://memorykill.github.io/index.css"/>
+  <style>
+  #Robot{
+    width:160px;
+    height:160px;
+    position:fixed;
+    top:45px;
+    right:0px;
+    border:1px solid blue;
+  }
+  #Robot :hover{
+    background:red;
+  }
+  </style>
+</head>
+<body>
+     <div id="Header">
+        <div class="list"><a href="https://memorykill.github.io/">主页</a></div>
+        <div class="list"><a href="https://memorykill.github.io/page/mould.html">模具</a></div>
+        <div class="list"><a href="https://memorykill.github.io/page/web.html">前端</a></div>
+        <div class="list"><a href="https://memorykill.github.io/page/author.html">作者</a></div>
+    </div>    
+  
+    <div class="content">
+        <div><h2>前端设计</h2></div>      
+        <h3>学习之路</h3> 
+        <p>点击机器人</p>
+    </div>
+        
+<div id="Robot">
+  <svg version="1.1"
+     baseProfile="full"
+     width="160" height="160"
+     xmlns="http://www.w3.org/2000/svg">
+
+     <circle cx="70" cy="5" r="5" fill="red"/>
+     <path d="M70 0 L 90 40 H 120 V 80 H 60 V 40 H 120" stroke="red" fill="none" />
+     <rect x="75" y="80" width="30" height="5" stroke="black" fill="transparent"/>
+     <rect x="50" y="85" width="80" height="35" stroke="black" fill="transparent"/>    
+     
+     <rect rx="9" x="130" y="90" width="7" height="50" stroke="black" fill="transparent"/>     
+
+     <rect x="70" y="120" width="10" height="35" stroke="black" fill="transparent"/>
+     <rect x="100" y="120" width="10" height="35" stroke="black" fill="transparent"/>     
+     <line x1="50" x2="36" y1="86" y2="80" stroke="black"/>   
+     <line x1="36" x2="25" y1="80" y2="60" stroke="black"/>   
+     <path d="M9 45 Q 25 60 50 40 L 48 50 L 25 60 L 11 55 z " stroke="black" fill="transparent"/>
+  <text x="80" y="110" font-size="20" text-anchor="middle" fill="white">点我哟</text>
+  </svg>  
+</div>
+
+  <script>
+    window.onload=()=>{      
+      Robot();
+    }  
+    function Robot(){
+      var robot=document.getElementById("Robot");
+      var Colortheme=["red","green","blue"];
+      setTimeout(RobotHi,200);
+      function RobotHi(){
+        let n=0;
+        var test1 = window.setTimeout(()=>{
+            console.log("hi");//定时器清除问题
+            n++;
+      },500);
+        if(n=4){
+          clearInterval(tes1);
+        }  
+      }
+    }
+    
+  </script>
+</body>
+</html>

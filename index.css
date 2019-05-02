@@ -42,7 +42,7 @@ html,body{
     text-align:center;
   }	
  @media screen and (min-height: 1500px) {
-    body {
+    html,body {
         font-size:2em;
     }
   }

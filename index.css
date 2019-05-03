@@ -45,5 +45,8 @@ html,body{
     html,body {
         font-size:2em;
     }
+     #content{
+    height:1500px;
+    }
   }
   

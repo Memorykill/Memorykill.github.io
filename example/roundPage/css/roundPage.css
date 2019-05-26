@@ -1,0 +1,56 @@
+.ppt{
+    width:1280px;
+    height:500px;
+    margin:3px auto;
+   
+}
+.pptImg div{
+    width:1280px;
+    height:500px;
+    margin:0;
+    position:absolute;
+    transition:0.4s;
+    opacity: 0;
+}
+.pptImg div img{
+    width:100%;
+    height:100%;
+}
+.ppt div .on{
+    opacity: 1;
+}
+.pptBtn div{
+    width:40px;
+    height:500px;
+    font-size:3em;
+    line-height:500px;
+    text-align:center;
+    position: absolute;	
+    color:rgb(237,223,139);
+}
+.pptBtn .btn-right{		
+    margin:0 0 0 1240px;		
+}
+@media screen and (max-width: 1280px) {
+    .ppt{
+        width:800px;
+    }
+    .pptImg div{
+        width:800px;
+    }
+    .pptBtn .btn-right{	
+        margin:0 0 0 750px;	
+    }
+}
+@media screen and (max-width: 800px) {
+    .ppt{
+        width:780px;
+    }
+    .pptImg div{
+        width:780px;
+    }
+    .pptBtn .btn-right{	
+        margin:0 0 0 740px;	
+    }
+}
+

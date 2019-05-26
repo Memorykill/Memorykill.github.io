@@ -41,6 +41,13 @@ html,body{
     width:100%;         
     text-align:center;
   }	
+  .example{
+    padding:20px 0 17px  50px;
+    height:52px;
+  }
+  .example a{
+      display: block;
+  }
  @media screen and (min-height: 1500px) {
     html,body {
         font-size:2em;
@@ -49,4 +56,17 @@ html,body{
     height:1500px;
     }
   }
-  
+  @media only screen and (min-width:700px){
+    #Web,#Moule{
+        width:50%;
+        float: left;
+    } 
+    #MyExample{
+      height:213px;
+  }
+    #Hole{
+        margin:3px 0;
+        height:339px;
+    }   
+
+  }

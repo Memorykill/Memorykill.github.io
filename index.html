@@ -1,53 +1,165 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8"/>
-  <meta name="description" content="申振升申振升申振升最帅"/>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <meta name="og:description" content="申振升，申振升，申振升申振升申振升"/>
-  <meta name="keywords" content="申振升，申振升,申振升"/>  
-  <title>申振升</title>
-  <link  rel="stylesheet" href="index.css"/>  
-</head>
-<body>
-  <div id="Header">
-    <div class="list"><a href="https://memorykill.github.io/">主页</a></div>
-    <div class="list"><a href="page/mould.html">模具</a></div>
-    <div class="list"><a href="page/web.html">前端</a></div>
-    <div class="list"><a href="page/author.html">作者</a></div>
-  </div>  
-    
-  <h3>我可以为这个世界所贡献的：</h3>
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="og:description" content="申振升，申振升，申振升申振升申振升"/>
+        <meta name="keywords" content="申振升，申振升,申振升"/> 
+        <link rel="icon" href="icon.jpg" type="image/x-icon"/>
+        <title>心痛</title>
+        <style>
+        html,body{
+            margin:0;padding:6px;font-size:1.2em;
+        }
+        #Card{
+            padding:30px 40px 20px;            
+        }    
+        img{
+            width:100%;
+            height:100%;
+        }    
+        #Card  #IconHead{
+            width:150px;
+            height:150px;
+            border:2px solid orange;
+            border-radius: 50%;
+            overflow: hidden;
+            margin:0 0 38px 0;
+        }
+        #Card #TextName{
+            position: absolute;
+            top:3px;
+            left:236px;
+            font-size:1.7em;
+        }        
+        #Moule{
+            background:red;            
+        }
+        #Web{            
+            background:yellow;
+        }
+        .example{
+            padding:20px 0 17px  50px;
+            height:52px;
+        }
+        .example a{
+            display: block;
+        }
+        #Hole{
+            margin:21px 0;
+            height:433px;
+            background:black;
+            padding:20px;
+            color:white;
+        }
+        .FontCenter{
+            margin:7px auto 12px;
+            text-align: center;
+            font-size:1.5em;
+        }
+        #Baidu{
+            display:none;
+            height:80px;
+        }
+        #Baidu input{
+            padding:0;
+            height:50px;
+            line-height: 70px;
+        }
+        input[type="text"]{
+            width:80%;
+        }
+        input[type="submit"]{            
+            width:10%;           
+        }  
+        #LinkList a{
+            width:27.7%;
+            height: 70px;
+            margin:18px 15px 0 15px;
+            float:left;
+            text-align: center;
+            line-height: 70px;
+            border:1px solid orange;
+            border-radius: 50px;
+        }      
+        @media only screen and (min-width:700px){
+            #Web,#Moule,#Description,#Contact{
+                width:50%;
+                float: left;
+            }              
+            #Card{
+                height:373px;
+            }  
+            #MyExample{
+                height:213px;
+            }
+            #Hole{
+                margin:3px 0;
+                height:339px;
+            }   
+            #LinkList a{
+                width:210px;
+            }            
+        }        
+        </style>
+    </head>
+    <body>
+        <div id="Card">
+            <div id="IconHead">
+                <Img src="a.JPG"/>
+            </div>
 
-  <div id="content">
-    <div>
-      <h2>
-          <a href="https://memorykill.github.io/page/mould.html">模具设计与制造</a>
-      </h2>
-      <div>
-        这是我现在所学习的主业,它告诉我当飞机撞上鸟的故事
-      </div> 
-                
-      <ul>  
-        <li><a href="https://memorykill.github.io/page/mould/FeFe3c.html">铁碳合金相图</a></li>
-      </ul>     
-    </div> 
-     
-    <div>
-      <h2>
-          <a href="https://memorykill.github.io/page/web.html">前端设计师</a>
-      </h2>
-      <div>
-        我所爱好的,诚如你所见到的
-      </div>
-                     
-        <ul>  
-          <li><a href="https://memorykill.github.io/page/web/roundPage.html">轮播图</a></li>
-          <li><a href="https://memorykill.github.io/page/web/picRuler.html">像素尺</a></li>
-        </ul>                
-    </div>
-  </div> 
+            <div id="TextName">
+                <p>申振升</p>
+                <p>我可以为这个世界贡献的</p>
+            </div>
 
-  <div id="footer"><p>由<a href="https://memorykill.github.io/page/author.html">申振升</a>制作</p></div>
-</body>
+            <div id="Contact">
+                <p>[+86]13995613643</p>
+                <p>QQ：<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2151057013&site=qq&menu=yes">2151057013</a></p>
+                <p><a href="mailto:2151057013@qq.com?subject=从你的网站上看到你的资料">2151057013@qq.com</a></p>
+            </div>
+
+            <div id="Description">
+                <p>China</p>
+                <p>19岁</p>
+            </div>
+        </div>
+
+        <div id="MyExample"><div id="Moule">
+            <div class="FontCenter">模具设计与制造</div>
+            <ul class="example">
+                <li><a href="https://memorykill.github.io/example/FeFe3c/index.html">铁碳合金相图</a></li>
+            </ul>
+          </div>
+        
+          <div id="Web">
+              <div class="FontCenter">前端设计师</div>
+              <ul class="example">
+                  <li><a href="https://memorykill.github.io/example/roundPage/index.html">轮播图</a></li>
+                  <li><a href="https://memorykill.github.io/example/picRuler/index.html">像素尺</a></li>
+              </ul>
+          </div></div> 
+
+        <div id="Hole">
+            <div class="FontCenter">学习链接</div>
+            <div id="Baidu">
+                <input type="text" name="Baiu" value="badiu"/>
+                <input type="submit" value="search"/>
+            </div>
+            <div id="LinkList">
+                <a target="main" href="https://github.com/Memorykill">my github</a>
+                <a target="main" href="https://github.com/">GitHub</a>
+                <a target="main" href="https://www.chuangkit.com">创客贴</a>
+                <a target="main" href="https://www.iconfont.cn/">阿里图标</a>
+                <a target="main" href="https://mongoosejs.com/">mongodb</a>
+                <a target="main" href="https://www.bootcdn.cn/">CDN</a>
+                <a target="main" href="https://fanyi.baidu.com">百度翻译</a>
+                <a target="main" href="http://jquery.cuishifeng.cn/jQuery.Ajax.html">jQuery参考</a>
+                <a target="main" href="https://developer.mozilla.org/zh-CN/">MDN</a>
+                <a target="main" href="http://www.bootcss.com/">Bootstrap</a>
+                <a target="main" href="http://nodejs.cn/">node.js</a>
+            </div>
+        </div>
+    </body>         
 </html>

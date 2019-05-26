@@ -48,6 +48,10 @@ html,body{
   .example a{
       display: block;
   }
+ #Hole{
+        
+        height:739px;
+    } 
  @media screen and (min-height: 1500px) {
     html,body {
         font-size:2em;

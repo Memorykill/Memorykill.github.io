@@ -11,15 +11,17 @@
             }
             p{margin:0}
             h3{
+                margin:3px 0;
+                font-size:10.3mm;
                 color:#138;
             }
-            span,.icon,.true,.flase{
+            a,span,.icon,.true,.flase{
                 position: relative;
                 display: inline-block;
                 background-position: center center;
                 background-size:100% 100%;
             }
-            span,#nav, #nav div,.icon{
+            a,span,#nav, #nav div,.icon{
                 height:58px;  
                 line-height: 58px;              
                 font-size: 33px;
@@ -57,36 +59,38 @@
                 display: none;                     
             }         
             exam .true{
-                width:20px;
-                height:20px;
+                width:9.7mm;
+                height:9.7mm;
                 background-image: url("正确.svg");
             }
             exam .flase{                
-                width:20px;
-                height:20px;
+                width:9.7mm;
+                height:9.7mm;
                 background-image: url("错误.svg");
             }
             key{
                 display: block;
-                font-size: 20px;
+                font-size: 9.7mm;
+                margin-left:15px;
             }
             key:hover{
                 color:#492;
             }
             
             exam .border{
+                margin:5px 0;
                 border-bottom: 1.5px solid rgba(2,5,4,0.6);
-                height:40px;
+                height:12mm;
             }
             exam .back,exam .left, exam .next{
                 margin:0;
                 display:block;
-                float:left
-                width:33.33%;h
-                height:35px;
-                font-size:22px;
-                color:#672;
-                font-size:22px;                
+                width:33.33%;
+                float:left;
+                height: 11.5mm;
+                font-size:11.2mm;
+                color:#672;                
+                line-height: 9mm;             
             }    
             exam .left{
                 text-align: center;
@@ -104,8 +108,8 @@
             }
             #pop .icon{
                 float: right;
-                width:30px;
-                height:30px;
+                width:8mm;
+                height:8mm;
                 background-image: url(x.svg);
             }
 
@@ -118,7 +122,7 @@
             }
             #time p{
                 height: 45px;
-                width: 120px;
+                width: 11.7mm;
                 text-align: center;
                 font-size:34px;
             }
@@ -221,14 +225,14 @@
                     }                            
                 }//:</next.test()>   
                 this.border=function(){   
-                        var lx=document.createElement("p");
+                        var lx=document.createElement("div");
                             lx.className="back";
                             lx.innerHTML="上一个";
                             lx.onclick=()=>{ fly(-1)      }
 
-                        var border=document.createElement("p")
+                        var border=document.createElement("div")
                             border.className="border";
-                        var res=document.createElement("p")
+                        var res=document.createElement("div")
                             res.className="left";
                             res.innerHTML="重做";
 
@@ -257,7 +261,7 @@
                             }
                         
                       
-                        var nx=document.createElement("p");
+                        var nx=document.createElement("div");
                             nx.className="next";
                             nx.innerHTML="下一个";
                             nx.onclick=()=>{

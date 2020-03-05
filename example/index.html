@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>考试</title>
+        <script type="text/javascript" src="exam.js"></script>
+        <link rel="icon" href="logo.png" type="images/x-ico" />
+        <style>
+            body,#nav,#exam{
+                width:100%;
+                margin:0;
+            }
+            p{margin:0}
+            h3{
+                margin:3px 0;
+                font-size:6.2mm;
+                color:#138;
+            }
+            a,span,.icon,.true,.flase{
+                position: relative;
+                display: inline-block;
+                background-position: center center;
+                background-size:100% 100%;
+            }
+            a,span,#nav, #nav div,.icon{
+                height:58px;  
+                line-height: 58px;              
+                font-size: 33px;
+                overflow: hidden;
+            }
+            #nav{
+                background:#691;
+                border-bottom: 2px solid #264;
+            }
+            #nav div{
+                width:33.333%;
+                float:left;
+            }
+            #nav .list{
+                text-align: center;
+            }
+            #nav .list .icon{               
+                width:52px;
+                background-image:url(nav-more.svg);                
+            }
+            #nav .git{
+                text-align: right;
+            }
+            #nav .git .icon{            
+                width:37px;
+                background-image: url(github.svg);
+            }
+
+            #exam{
+                width:88%;
+                margin: 0 auto;
+            }
+            exam{
+                margin:27px 0;
+                display: none;                     
+            }         
+            exam .true{
+                width:5.7mm;
+                height:5.7mm;
+                background-image: url("正确.svg");
+            }
+            exam .flase{                
+                width:5.7mm;
+                height:5.7mm;
+                background-image: url("错误.svg");
+            }
+            key{
+                display: block;
+                font-size: 5.7mm;
+            }
+            key:hover{
+                color:#492;
+            }
+            
+            exam .border{
+                border-bottom: 1.5px solid rgba(2,5,4,0.6);
+                height:9mm;
+            }
+            exam .back,exam .left, exam .next{
+                margin:0;
+                display:block;
+                width:33.33%;
+                float:left;
+                height: 7.3mm;
+                font-size:7.2mm;
+                color:#672;                
+                line-height: 9mm;             
+            }    
+            exam .left{
+                text-align: center;
+            }  
+            exam .next{
+                text-align: right;;
+            }   
+            #pop{
+                top:86px;
+                position: fixed;
+                display:none;/*弹窗开关*/
+                width:90%;               
+                background-color: rgba(13,86,23,0.8);
+                color:#fff;
+            }
+            #pop .icon{
+                float: right;
+                width:8mm;
+                height:8mm;
+                background-image: url(x.svg);
+            }
+
+            #time{
+                position:fixed;
+                right:0;
+                bottom:0;
+                height: 30%;
+                width: 20%;
+            }
+            #time p{
+                height: 45px;
+                width: 11.7mm;
+                text-align: center;
+                font-size:34px;
+            }
+            #time .icon{
+                width:58px;
+            }
+            #time .begin{
+                background-image: url(begin.svg);
+            }
+            #time .rest{
+                background-image: url(res.svg);
+            }
+            #time .rbegin{
+                background-image: url(rbegin.svg);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="nav">
+            <div class="hom">首页</div>
+            <div class="list"><span>题目</span><i class="icon"></i></div>
+            <div class="git"><i class="icon"></i><span>编辑本页</span></div>
+        </div>
+        <div id="exam">
+            
+        </div>
+        <div id="pop">
+           <i class="icon"></i>
+        </div>
+
+        <!-- <div id="time">
+            <p>2:00</p>
+            <i class="icon begin"></i>            
+            <i class="icon rest"></i>
+            <i class="icon rbegin"></i>            
+        </div> -->
+        <script>                      
+            var body=document.getElementById("exam");            
+            function next(date){
+                
+                this.date=date; 
+                this.el={};
+                this.bol=false;
+                this.fin=false;
+                this.count=0;
+                
+                this.init=function(){                   
+                    
+                    var ex=document.createElement("exam");this.el.ex=ex;
+
+                    var h=document.createElement("h3");this.el.h=h;//考试题目
+                    h.innerHTML=date.exam;
+
+                    var a=document.createElement("key"); this.el.a=a;                  
+                    a.innerHTML+=date.a;
+                    
+                    var b=document.createElement("key"); this.el.b=b;                  
+                    b.innerHTML+=date.b;
+
+                    var c=document.createElement("key"); this.el.c=c;                  
+                    c.innerHTML+=date.c;
+
+                    var d=document.createElement("key");this.el.d=d;                    
+                    d.innerHTML+=date.d;
+
+                    a.onclick=()=>{this.bol?this.ctrl():this.test("a")};
+                    b.onclick=()=>{this.bol?this.ctrl():this.test("b")};
+                    c.onclick=()=>{this.bol?this.ctrl():this.test("c")};
+                    d.onclick=()=>{this.bol?this.ctrl():this.test("d")};
+                    
+                    body.appendChild(ex);
+                    ex.appendChild(h);
+                    ex.appendChild(a);
+                    ex.appendChild(b);
+                    !date.c?null:ex.appendChild(c);
+                    !date.d?null:ex.appendChild(d);
+                    //this.show();
+                }//:</next.init>
+                this.test=function(q){                   
+                    this.border();
+                    var fl=document.createElement("i");fl.className="flase";
+                    var tu=document.createElement("i");tu.className="true";
+                    if(q==this.date.is){
+                        this.date.is=="a"?this.el.a.appendChild(tu):null;//console.log(this.el.a,this.date.a);console.log(typeof(this.date.is));
+                        this.date.is=="b"?this.el.b.appendChild(tu):null;
+                        this.date.is=="c"?this.el.c.appendChild(tu):null;
+                        this.date.is=="d"?this.el.d.appendChild(tu):null;
+                        this.bol=true;
+                    }else{
+                        q=="a"?this.el.a.appendChild(fl):null;//console.log(this.el.a,this.date.a);console.log(typeof(this.date.is));
+                        q=="b"?this.el.b.appendChild(fl):null;
+                        q=="c"?this.el.c.appendChild(fl):null;
+                        q=="d"?this.el.d.appendChild(fl):null;
+
+                        this.date.is=="a"?this.el.a.appendChild(tu):null;
+                        this.date.is=="b"?this.el.b.appendChild(tu):null;
+                        this.date.is=="c"?this.el.c.appendChild(tu):null;
+                        this.date.is=="d"?this.el.d.appendChild(tu):null;
+                        this.bol=true;
+                    }                            
+                }//:</next.test()>   
+                this.border=function(){   
+                        var lx=document.createElement("p");
+                            lx.className="back";
+                            lx.innerHTML="上一个";
+                            lx.onclick=()=>{ fly(-1)      }
+
+                        var border=document.createElement("p")
+                            border.className="border";
+                        var res=document.createElement("p")
+                            res.className="left";
+                            res.innerHTML="重做";
+
+                            res.onclick=()=>{
+                                this.bol=false;  
+                                this.count=0;                             
+                                this.el.ex.innerHTML="";
+                                this.el.ex.appendChild(this.el.h);
+                                var a=document.createElement("key");                   
+                                    a.innerHTML+=this.date.a;   this.el.a=a;                 
+                                var b=document.createElement("key");                 
+                                    b.innerHTML+=this.date.b;this.el.b=b;
+                                var c=document.createElement("key");                 
+                                    c.innerHTML+=this.date.c;this.el.c=c;
+                                var d=document.createElement("key");                 
+                                    d.innerHTML+=this.date.d;this.el.d=d;
+                                a.onclick=()=>{this.bol?this.ctrl():this.test("a")};
+                                b.onclick=()=>{this.bol?this.ctrl():this.test("b")};
+                                c.onclick=()=>{this.bol?this.ctrl():this.test("c")};
+                                d.onclick=()=>{this.bol?this.ctrl():this.test("d")};
+                                
+                                this.el.ex.appendChild(a);
+                                this.el.ex.appendChild(b);
+                                !date.c?null:this.el.ex.appendChild(c);
+                                !date.d?null:this.el.ex.appendChild(d);                                                               
+                            }
+                        
+                      
+                        var nx=document.createElement("p");
+                            nx.className="next";
+                            nx.innerHTML="下一个";
+                            nx.onclick=()=>{
+                                this.fin==true?null:fly(1);this.fin=true;//console.log("下一个"+this.count)
+                                
+                            }
+                        border.appendChild(lx)
+                        border.appendChild(res);
+                        border.appendChild(nx);
+                        this.el.ex.appendChild(border);
+                }//:</next.border()> 
+                this.ctrl=function(){//快捷下一个
+                    this.count++;
+                    if(this.fin==false){
+                        this.count>=1?fly(1):null;
+                    }
+                    
+                    this.fin=true;
+                }//:</next.ctrl()> 
+                this.show=function(bol){//控制显示，默认选择自动切换
+                    bol==true?this.fin=false:null;
+                    //console.log("添加前"+this.el.ex.style.display);
+                    if( this.el.ex.style.display=="block"){
+                        bol==undefined||null?bol=false:null;
+                        bol==false?this.el.ex.style.display="none":null;
+                        
+                    }else{
+                        bol==undefined||null?bol=true:null;
+                        bol==true?this.el.ex.style.display="block":null;
+                        
+                    }                   
+                    //console.log("添加后"+this.el.ex.style.display,bol);
+                }//:</next.show()>                                 
+            }//:</next()>   
+           
+           
+           var int=0;//默认从第一个试卷开始
+           var arrI=[];//存储哪个试卷做到了那里
+           var afly=new Array;  //幻灯片，存放所有创建的对象        
+           var flyn;//存放创建对象哪个正在放映
+           function crtl(date){//console.log("创建对象",date)//调用方式ctrl()||ctrl(obj)             
+               date==undefined?date=int:int=date;
+               arrI[date]==undefined?arrI[date]=0:null;
+               if(arrI[date]>=exam[int].test.length){                   
+                    alert("换个题目，这个试卷做完了");
+                    tshow();
+               }else{
+                    document.title=exam[date].name;//改变标题
+                    int=date;//改变开始顺序
+                    let sfly=new next(exam[int].test[arrI[int]]);                    
+                    sfly.init(); //先创建  
+                    sfly.show();//显示某个对象 
+                                      
+                    arrI[int]++;//对试卷做到的位置存储下
+                    afly.push(sfly);//console.log("我来存储afly"+afly.length)//存放到幻灯片 
+                    flyn==undefined?flyn=0:flyn++;//存储正在放映的号码
+                }                                                               
+           }
+           function fly(plane){//console.log("显示对象"+plan)//调用方式plan(number) 
+                //plane=="all"?bol=true:bol=flase;          
+                bol=false;
+                for(let i=0;i<afly.length;i++){
+                        //console.log(i);
+                        afly[i].show(bol);
+                }//先来洗干净                                                      
+                if(flyn==undefined){//初始化
+                    flyn=0;//console.log(flyn)
+                }else{
+                    if((flyn+plane)>=afly.length){
+                        crtl()
+                    }else{
+                        (flyn+plane)<=0?flyn=0:flyn+=plane;
+                    }                                      
+                }                
+                //console.log("检查afly的长度"+afly.length+"检查flyn的值"+flyn)
+                afly[flyn].show(true); //显示放映                   
+
+           }
+
+            document.getElementById("nav").getElementsByClassName("list")[0].onclick=()=>{               
+                tshow();
+            };
+
+            var bol=true;
+            var show=document.getElementById("pop");  
+            function tshow(){//弹窗开关
+                if(show.style.display=="block"){
+                     show.style.display="none";//console.log("关",show.style.display)
+                 }else{
+                    show.style.display="block";//console.log(show.style.display,"开")                   
+                }                
+            }
+
+            window.onload=()=>{   //弹窗预览     
+                crtl(); 
+                var W=document.body.scrollWidth;//console.log(W,"W")
+                var w=show.clientWidth;//console.log(w,"w")
+                show.style.width=W*0.84+"PX";
+                show.style.left=0.16*W/2+"px";//console.log(show.style.left,"show.left");
+                
+                for (let i=0;i<exam.length;i++){
+                    var li=document.createElement("h4");
+                    li.innerHTML=exam[i].name;
+                    li.onclick=()=>{ 
+                        if(int!=i){
+                            crtl(i);//console.log("查看的试卷"+i)
+                            tshow(); 
+                        }                                              
+                    }
+                    show.appendChild(li);
+                } 
+               
+            }
+           
+            show.getElementsByClassName("icon")[0].onclick=()=>{
+                tshow();
+            }
+
+            //var time=0;
+           // document.getElementById(time).getElementsByClassName("begin")[0].onclick=()=>{}
+
+
+        </script>
+    </body>
+</html>

@@ -1,7 +1,7 @@
 var exam=[
-    {name:"复合句练习题",class:"en",test:[
+    {name:"复合句练习题(2)",class:"en",test:[
         {exam:"1.  --- _______do you read English newspapers?--I read China Daily every day.",is:"c",a:"A. How long",b:"B. How soon ",c:"C. How often",d:"D. How far"},
-        {exam:"2. John had a short walk after lunch, _______？",is:"b",a:"A. did he",b:" B. didn't he ",c:"C. had he ",d:"D. hadn't he"},
+        {exam:"2. John had a short walk after lunch, _______？",is:"b",a:"A.did he",b:" B.didn't he ",c:"C. had he ",d:"D. hadn't he"},
         {exam:"3.  --- _______do you have an Art Festival in your school?---Once a year.",is:"b",a:"A. How long",b:"B. How often ",c:"C. How far",d:"D. How soon"},
         {exam:"4. If you want to go to see the movie this evening, so _______I.",is:"c",a:"A. do ",b:"B.am",c:"C.will ",d:"D. shouldd"},
         {exam:"5. _______tall the girl is!",is:"a",a:"A. How",b:"B. How a",c:"C. What",d:"D. What a"},
@@ -40,8 +40,18 @@ var exam=[
         {exam:"38. ---Can you tell me how many colours _______ in a rainbow?---Seven",is:"a",a:"A. there are",b:"B. are ther",c:"C. they are",d:"D. are they"},
         {exam:"39. I can't understand _______Apple's iPad 2.",is:"b",a:"A. why are they so mad about",b:"B. why they are so mad about",c:"C. how are they so mad about ",d:"D. how they are so mad about"},
     ]},
-    {name:"做题的必要",class:"en",test:[
-        {id:"1",exam:"中国的教育",is:"a",a:"a",b:"b",c:"c",d:"d"},
-        {id:"2",exam:"something",is:"b",a:"a",b:"b",c:"c",d:"d"},
+    {name:"复合句练习题(1)",class:"en",test:[
+        {id:"1",exam:"1．— The Dragon Boat races are so exciting, but our boat is still behind.— Don’t worry. I am sure _______ our team will win!",is:"c",a:"A. if",b:"B. /",c:"C. whether",d:"D. of"},
+        {id:"2",exam:"2．Why not listen to BBC news to improve your listening skills?It’s     difficult for me      follow.",is:"b",a:"A. too; to ",b:"B. so; that",c:"C. such; that",d:"D. so; too"},
+        {id:"2",exam:"3.— Yesterday there were      many people in the park      I almost lost my way.— It was the May Day holiday. Lots of people wanted to have fun there.",is:"a",a:"A. quite; that",b:"B. so; that",c:"C. enough; that",d:"D. very; that"},
+        {id:"2",exam:"4．This lesson was so boring ____ some students began to sleep in class.",is:"c",a:"A. that",b:"B. and",c:"C. when",d:"D. how"},
+        {id:"2",exam:"6．---The doctor told me not to eat too much, but I found it difficult.---The doctor is right. _________ you eat, ______ you will be.",is:"a",a:"A. The less, the healthier",b:"B.  The less; the more healthily",c:"C. The more; the healthier",d:"D. The more; the more healthily"},
+        {id:"2",exam:"7. —It seems _____ you like to work with children.—Yes, they are so lovely.",is:"d",a:"A. that",b:"B. what",c:"C.to",d:"D.as"},
+        {id:"2",exam:"8． I want to know if the idea _______ she has thought up works out fine.",is:"d",a:"A. who",b:"B. where",c:"C. that",d:"D. how"},
+        {id:"2",exam:"9．—You speak _____ fast _____ we can’t follow you.",is:"b",a:"—I will speak slowly.",b:"B. such; that",c:"C. such a; that",d:"D. too; to"},
+        {id:"2",exam:"10．Are you sure the news ______ you received from the Internet is true?",is:"d",a:"A. that ",b:"B. where",c:"C. what",d:"D. how"},
+        {id:"2",exam:"11．—Could you tell me __________？—Sorry, I don’t know.",is:"c",a:"A. how can I get to the Water Sports Center",b:"B. when will Mr. Black come back",c:"C. why is Tom late for class",d:"D. where Mr. Green has gone"},
+        {id:"2",exam:"12．These days the long TV play is     popular     my mother often keep  watching it for two hours without a rest a day .",is:"c",a:"A. so, that",b:"B. too , to",c:"C. very , that",d:"D. such , that"},
+        
     ]}
 ];

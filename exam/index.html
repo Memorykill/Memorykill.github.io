@@ -155,7 +155,7 @@
     </head>
     <body>
         <div id="nav">
-            <div class="hom">首页</div>
+            <div class="hom">目录</div>
             <div class="list"><span>题目</span><i class="icon"></i></div>
             <div class="git"><i class="icon"></i><span>编辑本页</span></div>
         </div>
@@ -392,7 +392,10 @@
             show.getElementsByClassName("icon")[0].onclick=()=>{
                 tshow();
             }
-
+            
+             var homes=document.getElementById("nav");
+            homes.getElementsByClassName("hom")[0].onclick=()=>{tshow();};
+            homes.getElementsByClassName("git")[0].onclick=()=>{window.open("https://github.com/Memorykill/Memorykill.github.io/tree/master/exam")};
             //var time=0;
            // document.getElementById(time).getElementsByClassName("begin")[0].onclick=()=>{}
         </script>

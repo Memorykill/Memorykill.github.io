@@ -9,7 +9,7 @@
 ## 项目链接
 * [班级墙](http://520you.club/2017)
 * [考试系统](http://520you.club/exam)
-* [以前的博客](http://520you.club/)
+* [以前的博客](http://520you.club/page/author)
 * [Memorykill.github.io](https://memorykill.github.io/)
 * [申振升的网站](https://memorykill.github.io/)
 # 想联系我吗？

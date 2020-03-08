@@ -55,6 +55,6 @@ var exam=[
 ```
 注意这个可以无限嵌套，但必须得是这种形式
 - 里面的数据必须以key:"value"形式
-- 你所见的符号都是<font color=red>英文输入法输</font>出来的，否则会出错
+- 你所见的符号都是<font color=red><strong>英文输入法输</strong></font>出来的，否则会出错
 - 暂时还没想好，可以打开看下[exam.js]
 

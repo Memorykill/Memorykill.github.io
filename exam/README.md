@@ -1,7 +1,7 @@
 [exam.js]:https://github.com/Memorykill/Memorykill.github.io/blob/master/exam/exam.js "exam.js"
 # 编辑考试页
 网页文件结构
-主要编辑的是exam.js[exam.js]文件 
+主要编辑的是[exam.js]文件 
 <details>
 <summary>展开查看</summary>
 <pre><code>

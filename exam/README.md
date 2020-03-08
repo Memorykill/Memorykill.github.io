@@ -18,7 +18,7 @@
 ├── nav-more.svg
 ├── rbegin.svg//各种的svg是图片
 ├── index.html//网页文件
-├── exam.js//存储的卷子数据    
+├── exam.js[exam] //存储的卷子数据    
 ├── README.md//现在看的当前页面
 </code></pre>
 </details>
@@ -55,6 +55,6 @@ var exam=[
 ```
 注意这个可以无限嵌套，但必须得是这种形式
 - 里面的数据必须以key:"value"形式
-- 你所见的符号都是英文输入法输出来的，否则会出错
+- 你所见的符号都是<strong color="red">英文输入法输</strong>出来的，否则会出错
 - 暂时还没想好，可以打开看下[exam.js]
 

@@ -34,20 +34,20 @@
                 background-size:100% 100%;
             }
             a,span,#nav, #nav div,.icon{
-                height:58px;  
-                line-height: 58px;              
-                font-size: 33px;
+                height:18mm;  
+                line-height:18mmm;              
+                font-size: 12mm;
                 overflow: hidden;
             }
             #nav{
                 background:#691;
-                border-bottom: 2px solid #264;
+                border-bottom: 3px solid #264;
             }
             #nav div{
                 width:33.333%;
                 float:left;
             }
-            #nav .list{
+            #nav .hom{
                 text-align: center;
             }
             #nav .list .icon{               
@@ -173,8 +173,8 @@
     </head>
     <body>
         <div id="nav">
-            <div class="hom">列表</div>
-            <div class="list"><span>题目</span><i class="icon"></i></div>
+            <div class="list"><span>考试</span><i class="icon"></i></div>
+            <div class="hom">题目列表</div>            
             <div class="git"><i class="icon"></i><span>编辑本页</span></div>
         </div>
         <div id="exam">
@@ -419,7 +419,7 @@
             }
             var homes=document.getElementById("nav");
             homes.getElementsByClassName("hom")[0].onclick=()=>{tshow();};
-            homes.getElementsByClassName("git")[0].onclick=()=>{window.open("https://github.com/Memorykill/Memorykill.github.io/tree/master/exam")};
+            homes.getElementsByClassName("git")[0].onclick=()=>{window.open("https://github.com/Memorykill/Memorykill.github.io/tree/master/exam/README.md")};
             //var time=0;
            // document.getElementById(time).getElementsByClassName("begin")[0].onclick=()=>{}
 

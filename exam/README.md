@@ -18,7 +18,7 @@
 ├── nav-more.svg
 ├── rbegin.svg//各种的svg是图片
 ├── index.html//网页文件
-├── exam.js[exam] //存储的卷子数据    
+├── exam.js//存储的卷子数据    
 ├── README.md//现在看的当前页面
 </code></pre>
 </details>

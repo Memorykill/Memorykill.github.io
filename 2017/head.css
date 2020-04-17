@@ -1,157 +1,272 @@
-<html>
-    <head>  
-        <title>2017</title>        
-        <link rel='stylesheet' type='text/css' media='screen' href='head.css'>
-        
-        <style>
-            #member,#down{
-                display: none;
-            }
-           
-        </style>
-    </head>
-    <body> 
-        <audio id="mymusic" src="https://music.163.com/song/media/outer/url?id=25706282.mp3"></audio>
-        <img id="musicPIC" onclick=" playPause()" src="https://p2.music.126.net/d541jx7SqoDzVkenhmtg6g==/19193074974743620.jpg?param=90y90" alt=""/>
-        <div id="head">
-            <div class="banner">
-               
-            </div>   
-            <div class=back>         
-                <div class="back">
-                    <div class="i">-2017-</div>
-                    <div class="list a">
-                        <a onclick="page(0)">班级首页</a>                    
-                        <a onclick="page(1)" href="#member">班级成员</a>
-                        <a onclick="page(2)" href="#down">下载专区</a>
-                        <a href="http://www.wheqx.cn/">二轻学校</a>
-                    </div>
-                </div>
-            </div>
-            <div class="list b">
-                <a onclick="page(0)">班级首页</a>                    
-                <a onclick="page(1)" href="#member">班级成员</a>
-                <a onclick="page(2)" href="#down">下载专区</a>
-                <a href="http://www.wheqx.cn/">二轻学校</a>
-            </div>
-        </div>
+html,body,div{margin:0;padding: 0;} .b{display: none;} a{text-decoration:none;color:black}
+html,body,#head{width:100%;}               
+#head .banner{
+    height:18px;
+    background:rgb(249,241,181);
+}
+#head .back{
+    width:100%;
+    background-color: rgb(249,241,181);
+}
+#head .back .back,#head .list,#neck,#new,#foot{
+    width:80%;
+}
+img{
+    width:100%;
+    height:120px;
+}     
+#head .back .back{                                         
+    height:95px;
+    background:rgb(253,156,156);
+    margin:0 auto;
+}
+#head .i{
+    position: absolute;
+    margin: 37px 0 37px 45px;
+}
+#head .back .list{
+    background: none;
+    width:320px;
+    position: absolute;
+    margin: 37px;
+    right:10%;
+}
+#head .list{
+    margin:0 auto;
+    background:rgb(253,156,156);
+    height:20px;               
+}
+#head .list a{
+    float: left;
+}
+.list a{                
+    width:25%;
+    text-align: center;
+    /* height:20mm; */
+}
+.list a:hover{
+    background: yellow;
+}
 
-        
-        <div id="neck">
-            <div class="banner"></div>
-            <div id="change">
-                <img src="http://www.wheqx.cn/UpFile/202031877790185.png"/>
-               
-                <img src="http://wheqx.cn//UpFile/201732239803021.jpg"/>
-            </div>
-        </div>        
-
-        <div id="new">
-            <div class="banner"></div>
-            <hr/>
-            <div class="new">
-                <div class="left">
-                    <div class="box">
-                        <img src="http://www.wheqx.cn/UpFile/201632233935737.jpg"/>
-                        <h2>班级新闻</h2>
-                        <a class="thing">暂无</a>
-                        <a class="more">更多</a>
-                    </div>
-                   
-                </div>
-                <div class="right">
-                    <div class="box">
-                        <img src="http://www.wheqx.cn/UpFile/201632234785409.JPG"/>
-                        <h2>活动安排</h2>
-                        <a class="thing">祝同学们考试顺利</a>
-                        
-                        <a class="more">更多</a>
-                    </div>
-                </div>
-                <div class="center">
-                    <div class="box">
-                        <img src="http://www.wheqx.cn/upfile/202004041354136306.png"/>
-                         <h2>学校新闻</h2>
-                        <a class="thing" href="http://www.wheqx.cn/html/xuexiaoxinwen/3592.html">我校教职工深切悼念抗击疫情斗争牺牲烈士和逝世同胞-4.4</a>
-                        <a class="thing" href="http://www.wheqx.cn/html/xuexiaoxinwen/3593.html">二轻学子的防疫日志</a>
-                        
-                        <a class="more">更多</a>
-                    </div>
-                </div>
+#neck{
+    margin:0 auto;
+    
+    width:80%;
+    height:440px;
+}
+#neck .banner{
+    width:100%;
+    height:20px;
+    background: none;
+}
+#change{
+    width:100%;
+    height:400px;
+    background:rgb(248,214,166);
+}
+#new{
+    margin:0 auto;
+}
+#new .banner{
+    width:100%;
+    height:20px;
+}
+#new .new{
+    width: 100%;               
                 
-            </div>
-        </div>
-
-
+}
+.new .left{
+    position: absolute;
+    width:25%;                           
+    left: 9%;
+} 
+.left .more{background:red;border:1px solid red;} 
+.right .more{background:blue;border:1px solid blue;}
+.center .more{background:green;border:1px solid green;}           
+.new .center{
+    width:31.25%;                
+    margin:0 auto;       
+}
+.new .right{
+    position: absolute;
+    width: 25%;                
+    right: 9%;                
+}
+.left h2{
+    border-bottom: 1px dashed red;
+}
+.right h2{
+    border-bottom: 1px dashed blue;
+}
+.center h2{
+    border-bottom: 1px dashed green;
+}
+.box .thing{
+    display: block;
+    width: 89%;
+    height:45px;
+    margin:5px;
+    overflow: hidden;
+    line-height: 20px;
+    font-size:19px;
+    overflow: hidden;
+}
+.new .more{
+    display: block;
+    width:60px;
+    height:30px;
+    line-height: 30px;
+    text-align: center;
+    margin:0 10px 0 auto;
     
-     
-    <div id="member">
-        <hr/>   
-        <div class="banner">图片来源qq空间</div>
+    border-radius: 17px;
+}
 
-        <div class="teacher">
-            <h3>老师</h3>
-          
-        </div>
-        <div class="student">
-            <h3>学生</h3>
-            
-        </div>
-    </div>
+#foot{
+    margin: 0 auto;
     
+   
+}
+#foot .banner{
+    width: 100%;
+    height:18px;
+    background: none;
+}
+#foot .content{
+    width:100%;
+    background: rgb(237,237,237);
+    /* padding: 5px 0 5px 30px; */
+}
+.content a:first-child{
+    margin-left:40px;
+}
 
-    
-    <div id="down">
-        <hr/>
-        <div class="banner"></div>        
-        <div class="down">
-            <h3>下载文件</h3>
-            暂无
-        </div>
-    </div>
+@media (max-width: 767px) {
+    .a{display: none;}
+    .b{display: block;}
+    #head .back .back,#head .list,#neck,#new,#foot{
+        width:100%;
+    }
+    .new .left,.new .right,.new .center{
+        position: relative;
+        width: 100%;
+        left: 0;
+        right:0;
+        margin:40px 0;
+    }
+    img{
+        display: block;
+        width:225px;
+        margin:0 auto;
+    }
+}
+#change img{
+    width:100%;height:100%;
+    display:none;
+}
+#change img.on{
+    display: block;
+}
 
 
-        <div id="foot">
-            <div class="banner"></div>
-            <div class="content">
-                <a>使用说明 | </a>
-                <a>托管网址</a>
-            </div>
-        </div>
 
-      
-
-        <script>
-            const pageA=document.getElementById("neck");
-            const pageB=document.getElementById("member");
-            const pageC=document.getElementById("down");
-
-            //const Mpage=document.getElementById("head");
-            const Npage=document.getElementById("new");
-            function page(p=Number){
-                p==undefined?p=1:null;
-                //pageA.style.display="none";
-                pageB.style.display="none";
-                pageC.style.display="none";
-                //Mpage.style.display="none";
-                Npage.style.display="none";
-                switch(p){
-                    case 0:
-                        Npage.style.display=pageA.style.display="block";
-                        break;
-                    case 1:
-                        pageB.style.display="block";
-                        break;
-                    case 2:
-                        pageC.style.display="block";
-                        break;
-                    default:                    
-                        Mpage.style.display=pageA.style.display="block";
-                        break;                     
-                        
-                }
+/* member */
+            p{
+                margin: 0;
             }
-        </script>
-        <script src='date.js'></script>
-    </body>
-</html>
+            #member .banner,.mem p{
+                width: 100%;
+            }
+            #member{
+                width:80%;
+                margin: 0 auto;
+            }
+            #member .banner{
+                width:100%;
+                height:20px;
+            }
+        
+            .mem{
+                margin:20px;
+                display: inline-table;
+            }
+            .mem img{
+                display: block;
+                width:94px;       
+                height: 94px;
+                margin:0 auto;
+                border:1px solid white;
+                border-radius: 50%;
+            }
+            .mem .nick{
+                font-size: 0.8em;
+                color:orange;
+                background: green;
+            }
+            .mem p{
+                height:25px;
+                line-height: 25px;
+                text-align: center;
+                font-size: 20px;
+            }
+            @media (max-width: 767px) {
+                #member{width:100%}           
+            } 
+            
+/* download */
+#down .banner,#down .down{
+    margin:0 auto;
+    width:100%;
+}
+#down{
+    width:80%;  
+    margin: 0 auto;          
+}
+#down .banner{
+    height:20px;
+}
+#down .down{            
+    margin:0 auto;           
+}
+.down a{
+    display: block;
+    padding: 25px 0 1px 20px;
+    font-size:17px;
+    color:rgb(102,102,102);
+} 
+@media (max-width: 767px) {
+    #down{width:100%}
+    .down a{
+        padding:25px 0 1px 5px;
+    }
+}   
+
+
+/* playmusci */
+#musicPIC{
+    width: 66px;
+    height: 66px;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+#musicPIC.on{
+   border:0.5px solid blue;
+   border-radius: 50%;
+   
+   animation:disc 5s linear infinite;
+-webkit-animation:disc 5s linear infinite alternate; /*Safari and Chrome*/
+animation-direction:alternate;
+-webkit-animation-direction:alternate;
+}
+@keyframes disc
+{
+from {transform: rotate(0deg);}
+to { transform: rotate(360deg);}
+}
+
+@-webkit-keyframes disc /*Safari and Chrome*/
+{
+    from {transform: rotate(0deg);}
+    to { transform: rotate(360deg);}
+}

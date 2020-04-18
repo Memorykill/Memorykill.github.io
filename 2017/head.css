@@ -141,7 +141,7 @@ img{
     margin-left:40px;
 }
 
-@media (max-width: 767px) {
+@media (max-height: 767px) {
     .a{display: none;}
     .b{display: block;}
     #head .back .back,#head .list,#neck,#new,#foot{

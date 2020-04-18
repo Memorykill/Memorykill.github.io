@@ -234,12 +234,12 @@ img{
     font-size:17px;
     color:rgb(102,102,102);
 } 
-@media (max-height: 767px) {
+/* @media (max-width:727x) {
     #down{width:100%}
     .down a{
         padding:25px 0 1px 5px;
     }
-}   
+}    */
 
 
 /* playmusci */

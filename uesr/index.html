@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>创业演示稿</title>
+    <style>
+        #work,#my{display:none};        #new{display: block;}
+        #tool{
+            position: fixed;
+            margin: 0 auto;
+            background-color: black;color:white;
+            font-size: 20px;
+            width: 100%;
+            bottom: 0;
+        }
+        #tool div{
+            width:33.33%;
+            text-align: center;
+            float: left;
+        }
+        #tool div:hover{
+            background:red;
+        }
+
+
+        #new,#work,#my{
+            width:100%;
+           
+        }
+        #new .title{
+            width:89%;                 
+            height:30px;
+            background: red;
+            margin:0 auto;
+        }
+        #new .title{
+            width:50%;
+            text-align: center; 
+            line-height: 30px; 
+        }
+        #new .cctv{
+            width:88%;      
+            height:300px;                                                                                                                                               ;
+            margin:13px auto;
+            background: blue;
+        }
+        #new .active{
+            width:88%;
+            height:200px;
+            margin:10px auto;
+            background:blue;
+        }
+        #my .title {
+            width: 100%;
+            height: 200px;
+            margin: 0 auto;            
+        }
+        #my .title .pic{
+            width:30%;            
+            border-radius: 27%;
+        }
+        #my .title .name{
+            width:40%; 
+            text-align:center           
+        }
+        #my .title .set{
+            width:30%;
+            text-align: right;
+        }
+        #my .title .pic,#my .title .name, #my .title .set{
+            height:200px;
+            line-height: 200px;
+            display: block;
+            float:left;
+        }
+        #my .link{
+            width:89%;
+            height:400px;
+            background:blue;
+            margin:18px auto 0;
+        }
+        #my .link a{
+            display: block;
+            width:16.66666666%;
+            float:left;
+            height:30px;
+            line-height:30px;
+            color:yellow;
+            background-color: blue;
+            text-align: center;
+        }
+        #my .list{
+            width:89%;
+            height:200px;
+            margin:0 auto;
+            background-color: yellowgreen;
+        }
+
+
+        #work .title{
+            width:100%;
+            height:30px;
+            line-height: 30px;
+            text-align: center;
+        }
+        #work .title .on{
+            color: brown;
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="tool">
+        <div class="new">新闻</div>
+        <div class="work">工作台</div>
+        <div class="my">我的</div>
+    </div>
+    <div id="new">
+        <div class="title">
+            <span>国内</span>
+            <span>国外</span>
+        </div>
+        <div class="cctv">新闻联播</div>
+        <div class="active">
+            <p>正在搜所中  Q......</p>
+        </div>
+    </div>
+    <div id="work">
+        <div class="title">
+            <span class="on">机械</span>
+            <span>金融</span>
+            <span>更多</span>
+        </div>
+        <div class="start">
+            <div>国家标准</div>
+            <div>材料</div>
+            <div>机床</div>
+        </div>
+        <div></div>
+    </div>
+    <div id="my">
+        <div class="title">
+            <img class="pic" src="./pic.jpg" alt="头像">
+            <span class="name">nickname</span>
+            <span class="set">消息</span>
+        </div>
+        <div class="link">
+            <a href="www.baidu.com" >度娘</a><a href="www.baidu.com" >度娘</a><a href="www.baidu.com" >度娘</a>
+            <a href="www.baidu.com" >度娘</a><a href="www.baidu.com" >度娘</a><a href="www.baidu.com" >度娘</a>
+        </div>
+        <div class="list">
+            <p>模具设计</p>
+            <p>心里感受</p>
+        </div>
+        <div class="time">
+            <p>最近用户很活跃!</p>
+        </div>
+    </div>
+
+
+    <script>
+       function main(){
+           var dog=document.getElementById("tool");
+           var news=dog.getElementsByClassName("new")[0];
+           var work=dog.getElementsByClassName("work")[0];
+           var my=dog.getElementsByClassName("my")[0];
+           function nShow(){
+               document.getElementById("new").style.display="none";
+               document.getElementById("work").style.display="none";
+               document.getElementById("my").style.display="none";
+           }
+           news.onclick=()=>{        nShow();        document.getElementById("new").style.display="block";   }
+           work.onclick=()=>{        nShow();        document.getElementById("work").style.display="block";   }
+           my.onclick=()=>{        nShow();        document.getElementById("my").style.display="block";   }
+       }
+       main();
+    </script>
+</body>
+</html>

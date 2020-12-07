@@ -6,13 +6,16 @@
     <title>创业演示稿</title>
     <style>
         #work,#my{display:none};        #new{display: block;}
-        html{width:100%;height:100%;margin:0;padding: 0;}
+        html,body,#back{width:100%;height:100%;margin:0;padding: 0;}
         body{
-            background-image: url("back.jpg");
-            background-repeat: no-repeat;
-            background-size: auto 100%;
-            background-position: top center;
+            background-color:rgb(173,124,107);            
         }
+        #new .title, #new .cctv, #new .active{
+            background-repeat: no-repeat;
+            background-size:  100% ;
+            /* background-position:center ; */
+        }
+        #back{width:88%;background-color:white;margin: 0 auto;position: absolute;left: 6%;z-index: -1314520;}
         #tool{
             position: fixed;
             margin: 0 auto;
@@ -35,26 +38,27 @@
             width:100%;           
         }
         #new .title{
-            width:89%;                 
-            height:30px;
+            width:95%;                 
+            height:129px;
             /* background: red; */
-            margin:0 auto;
-        }
-        #new .title{
-            width:50%;
+            margin:23px auto;
+            background-image: url(./Ntop.jpg);           
             text-align: center; 
             line-height: 30px; 
-        }
+        }      
         #new .cctv{
-            width:88%;      
+            width:93%;      
             height:300px;                                                                                                                                               ;
             margin:13px auto;
+            background-image: url(./Nnew.jpg);
+      
             /* background: blue; */
         }
         #new .active{
-            width:88%;
+            width:90%;
             height:200px;
             margin:10px auto;
+            background-image: url(./Nnative.jpg);
             /* background:blue; */
         }
         #my .title {
@@ -83,7 +87,7 @@
         #my .link{
             width:89%;
             height:400px;
-            /* background:blue; */
+            background:blue;
             margin:18px auto 0;
         }
         #my .link a{
@@ -100,7 +104,7 @@
             width:89%;
             height:200px;
             margin:0 auto;
-            /* background-color: yellowgreen; */
+            background-color: yellowgreen; 
         }
 
 
@@ -170,6 +174,7 @@
             <p>最近用户很活跃!</p>
         </div>
     </div>
+
 
 
     <script>

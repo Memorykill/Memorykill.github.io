@@ -18,9 +18,8 @@ qwertyuio
 asdfghjkl    dd
 ```
 [这不是连接](https://www.jianshu.com/p/399e5a3c7cc5)
-[my-logo.png]: https://upload-images.jianshu.io/upload_images/13623636-6d878e3d3ef63825.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240 "my-logo"
-![my-logo.png]
-//参数定义的其他写法
-[my-logo.png]: https://upload-images.jianshu.io/upload_images/13623636-6d878e3d3ef63825.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240 'my-logo'
-[my-logo.png]: https://upload-images.jianshu.io/upload_images/13623636-6d878e3d3ef63825.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240 (my-logo)
-[my-logo.png]: <https://upload-images.jianshu.io/upload_images/13623636-6d878e3d3ef63825.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240> "my-logo"
+|123|234|345|
+|:-|:-:|-:|
+|abc|bcd|cde|
+|abc|bcd|cde|
+|abc|bcd|cde|

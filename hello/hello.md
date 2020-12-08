@@ -18,4 +18,4 @@ qwertyuio
 asdfghjkl    dd
 ```
 [这不是连接](https://www.jianshu.com/p/399e5a3c7cc5)
-[连.jpg]:(https://upload-images.jianshu.io/upload_images/13623636-6d878e3d3ef63825.png?imageMogr2/auto-orient/strip|imageView2/2/w/200/format/webp) 'a'
+[连.jpg]:https://upload-images.jianshu.io/upload_images/13623636-6d878e3d3ef63825.png?imageMogr2/auto-orient/strip|imageView2/2/w/200/format/webp 'a'

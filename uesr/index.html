@@ -1,180 +1,364 @@
+
 <!DOCTYPE html>
-<html lang="zh">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>创业演示稿</title>
-    <style>
-        #work,#my{display:none};        #new{display: block;}
-        #tool{
-            position: fixed;
-            margin: 0 auto;
-            background-color: black;color:white;
-            font-size: 20px;
-            width: 100%;
-            bottom: 0;
-        }
-        #tool div{
-            width:33.33%;
-            text-align: center;
-            float: left;
-        }
-        #tool div:hover{
-            background:red;
-        }
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <title>Home</title>
+        
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500italic,500,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
-        #new,#work,#my{
-            width:100%;
-           
-        }
-        #new .title{
-            width:89%;                 
-            height:30px;
-            background: red;
-            margin:0 auto;
-        }
-        #new .title{
-            width:50%;
-            text-align: center; 
-            line-height: 30px; 
-        }
-        #new .cctv{
-            width:88%;      
-            height:300px;                                                                                                                                               ;
-            margin:13px auto;
-            background: blue;
-        }
-        #new .active{
-            width:88%;
-            height:200px;
-            margin:10px auto;
-            background:blue;
-        }
-        #my .title {
-            width: 100%;
-            height: 200px;
-            margin: 0 auto;            
-        }
-        #my .title .pic{
-            width:30%;            
-            border-radius: 27%;
-        }
-        #my .title .name{
-            width:40%; 
-            text-align:center           
-        }
-        #my .title .set{
-            width:30%;
-            text-align: right;
-        }
-        #my .title .pic,#my .title .name, #my .title .set{
-            height:200px;
-            line-height: 200px;
-            display: block;
-            float:left;
-        }
-        #my .link{
-            width:89%;
-            height:400px;
-            background:blue;
-            margin:18px auto 0;
-        }
-        #my .link a{
-            display: block;
-            width:16.66666666%;
-            float:left;
-            height:30px;
-            line-height:30px;
-            color:yellow;
-            background-color: blue;
-            text-align: center;
-        }
-        #my .list{
-            width:89%;
-            height:200px;
-            margin:0 auto;
-            background-color: yellowgreen;
-        }
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- FontAwesome -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <!-- MaterialCSS -->
+        <link rel="stylesheet" href="css/material.min.css">
+        <!-- RipplesCSS -->
+        <link rel="stylesheet" href="css/ripples.min.css">
+        
+        <!-- ThemeCSS & Responsive CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
 
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        
+        <header class="header">
+            <div data-velocity="-.4" id="particles" class="header-bg"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="social-links">
+                            <a class="btn social-link" href="javascript:void(0)"><i class="fa fa-facebook"></i> <div class="ripple-wrapper"></div></a>
+                            <a class="btn social-link" href="javascript:void(0)"><i class="fa fa-twitter"></i> <div class="ripple-wrapper"></div></a>
+                            <a class="btn social-link" href="javascript:void(0)"><i class="fa fa-google-plus"></i> <div class="ripple-wrapper"></div></a>
+                            <a class="btn social-link" href="javascript:void(0)"><i class="fa fa-youtube"></i> <div class="ripple-wrapper"></div></a>
+                            <a class="btn social-link" href="javascript:void(0)"><i class="fa fa-linkedin"></i> <div class="ripple-wrapper"></div></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="site-title-table">
+                <div class="site-title-tablecell">
+                    <div class="slide-text">
+                        <h2><a href="index.html"><span>S</span>uper<span>H</span>eros</a></h2>
+                        <p>Another exciting blog template from awesome team</p>        
+                    </div>
 
-        #work .title{
-            width:100%;
-            height:30px;
-            line-height: 30px;
-            text-align: center;
-        }
-        #work .title .on{
-            color: brown;
-        }
-    </style>
+                </div>
+            </div>
+        </header>
+        
+        <section class="maincontent-wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="maincotnent shadow-z-1">
+                            <div class="mainmenu">
+                                <div class="navbar navbar-nobg">
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                    </div>
+
+                                    <div class="navbar-collapse collapse"> 
+                                        <ul class="nav navbar-nav">
+                                            <li class="active"><a href="index.html">Home <div class="ripple-wrapper"></div></a></li>
+                                            <li><a href="about.html">About</a></li>
+                                            <li><a href="archive.html">Movie</a></li>
+                                            <li><a href="archive.html">Sports</a></li>
+                                            <li><a href="archive.html">Travel</a></li>
+                                            <li><a href="single.html">Single</a></li>
+                                            <li><a href="contact.html">Contact</a></li>
+                                        </ul>                                                     
+                                    </div>     
+                                </div> 
+                            </div> 
+                            
+                            
+                            <div class="row">
+                                <div class="col-md-10 col-md-offset-1">
+                                    <div class="article-list">
+                                        <article class="post">
+                                            <header class="article-title text-center">
+                                                <p><a href="archive.html">Nature</a></p>
+                                                <h2><a href="single.html">Green Lantern for Green World!</a></h2>
+                                                <p class="post-meta">by Farhan Rizvi  @ 11th May</p>
+                                            </header>
+
+                                            <div class="article-featured-content shadow-z-2">
+                                                <a href="single.html"><img class="img-responsive" src="./img/post-2.jpg" alt=""></a>
+                                            </div>
+
+                                            <div class="post-summary">
+                                                <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                                            </div>
+
+                                            <div class="post-detail-link text-center">
+                                                <a href="single.html" class="btn btn-fab btn-raised btn-material-red">
+                                                    <i class="fa fa-plus"></i>
+                                                    <div class="ripple-wrapper"></div>
+                                                </a>
+                                            </div>
+                                        </article>
+                                        <article class="post">
+                                            <header class="article-title text-center">
+                                                <p><a href="archive.html">Movie</a></p>
+                                                <h2><a href="single.html">My Favorite Spiderman Movie</a></h2>
+                                                <p class="post-meta">by Ratul Ahmed  @ 09th May</p>
+                                            </header>
+
+                                            <div class="article-featured-content shadow-z-2">
+                                                <a href="single.html"><img class="img-responsive" src="img/post-1.jpg" alt=""></a>
+                                            </div>
+
+                                            <div class="post-summary">
+                                                <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                                            </div>
+
+                                            <div class="post-detail-link text-center">
+                                                <a href="single.html" class="btn btn-fab btn-raised btn-material-red">
+                                                    <i class="fa fa-plus"></i>
+                                                    <div class="ripple-wrapper"></div>
+                                                </a>
+                                            </div>
+                                        </article>
+                                        <article class="post">
+                                            <header class="article-title text-center">
+                                                <p><a href="archive.html">Movie</a></p>
+                                                <h2><a href="single.html">Marvel Phase to SuperCut</a></h2>
+                                                <p class="post-meta">by Rasel Ahmed  @ 07th May</p>
+                                            </header>
+
+                                            <div class="article-featured-content shadow-z-2">
+                                                <div class="embed-responsive embed-responsive-16by9">
+                                                    <iframe class="embed-responsive-item" src="" width="500" height="281"></iframe>
+                                                   
+                                                </div>
+                                         
+                                            </div>
+
+                                            <div class="post-summary">
+                                                <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                                            </div>
+
+                                            <div class="post-detail-link text-center">
+                                                <a href="single.html" class="btn btn-fab btn-raised btn-material-red">
+                                                    <i class="fa fa-plus"></i>
+                                                    <div class="ripple-wrapper"></div>
+                                                </a>
+                                            </div>
+                                        </article>
+                                        <article class="post">
+                                            <header class="article-title text-center">
+                                                <p><a href="archive.html">Fun</a></p>
+                                                <h2><a href="single.html">The Return of Hulk!</a></h2>
+                                                <p class="post-meta">by Tamanna Ferdous  @ 07th May</p>
+                                            </header>
+
+                                            <div class="article-featured-content shadow-z-2">
+                                                <div class="embed-responsive embed-responsive-16by9">
+                                                    <iframe class="embed-responsive-item" src="" width="500" height="281"></iframe>
+                                                </div>
+                                            </div>
+
+                                            <div class="post-summary">
+                                                <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                                            </div>
+
+                                            <div class="post-detail-link text-center">
+                                                <a href="single.html" class="btn btn-fab btn-raised btn-material-red">
+                                                    <i class="fa fa-plus"></i>
+                                                    <div class="ripple-wrapper"></div>
+                                                </a>
+                                            </div>
+                                        </article>
+                                        <article class="post">
+                                            <header class="article-title text-center">
+                                                <p><a href="archive.html">Character</a></p>
+                                                <h2><a href="single.html">Thor - The Hero of Power!</a></h2>
+                                                <p class="post-meta">by Farhan Rizvi  @ 06th May</p>
+                                            </header>
+
+                                            <div class="article-featured-content shadow-z-2">
+                                                <img class="img-responsive" src="img/article-2.jpg" alt="">
+                                            </div>
+
+                                            <div class="post-summary">
+                                                <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                                            </div>
+
+                                            <div class="post-detail-link text-center">
+                                                <a href="single.html" class="btn btn-fab btn-raised btn-material-red">
+                                                    <i class="fa fa-plus"></i>
+                                                    <div class="ripple-wrapper"></div>
+                                                </a>
+                                            </div>
+                                        </article>
+                                        <article class="post">
+                                            <header class="article-title text-center">
+                                                <p><a href="archive.html">Analysis</a></p>
+                                                <h2><a href="single.html">Beauty Queen of Avengers</a></h2>
+                                                <p class="post-meta">by Rasel Ahmed  @ 05th May</p>
+                                            </header>
+
+                                            <div class="article-featured-content shadow-z-2">
+                                                <a href="single.html"><img class="img-responsive" src="img/article-3.jpg" alt=""></a>
+                                            </div>
+
+                                            <div class="post-summary">
+                                                <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                                            </div>
+
+                                            <div class="post-detail-link text-center">
+                                                <a href="single.html" class="btn btn-fab btn-raised btn-material-red">
+                                                    <i class="fa fa-plus"></i>
+                                                    <div class="ripple-wrapper"></div>
+                                                </a>
+                                            </div>
+                                        </article>
+                                        <article class="post">
+                                            <header class="article-title text-center">
+                                                <p>Movie</p>
+                                                <h2><a href="single.html">The Target Man!</a></h2>
+                                                <p class="post-meta">by Ratul Ahmed  @ 05th May</p>
+                                            </header>
+
+                                            <div class="article-featured-content shadow-z-2">
+                                                <a href="single.html"><img class="img-responsive" src="img/article-4.jpg" alt=""></a>
+                                            </div>
+
+                                            <div class="post-summary">
+                                                <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                                            </div>
+
+                                            <div class="post-detail-link text-center">
+                                                <a href="single.html" class="btn btn-fab btn-raised btn-material-red">
+                                                    <i class="fa fa-plus"></i>
+                                                    <div class="ripple-wrapper"></div>
+                                                </a>
+                                            </div>
+                                        </article>
+                                        <article class="post">
+                                            <header class="article-title text-center">
+                                                <p><a href="archive.html">Secret</a></p>
+                                                <h2><a href="single.html">Mind can be controled like mine!</a></h2>
+                                                <p class="post-meta">by Unknown  @ 02nd May</p>
+                                            </header>
+
+                                            <div class="article-featured-content shadow-z-2">
+                                                <a href="single.html"><img class="img-responsive" src="img/article-5.jpg" alt=""></a>
+                                            </div>
+
+                                            <div class="post-summary">
+                                                <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                                            </div>
+
+                                            <div class="post-detail-link text-center">
+                                                <a href="single.html" class="btn btn-fab btn-raised btn-material-red">
+                                                    <i class="fa fa-plus"></i>
+                                                    <div class="ripple-wrapper"></div>
+                                                </a>
+                                            </div>
+                                        </article>
+                                        
+                                        
+                                        <nav role="navigation" class="navigation posts-navigation">
+                                            <div class="nav-links">
+                                                <div class="nav-previous">
+                                                    <a href="#">Older posts</a>
+                                                </div>
+                                                <div class="nav-next">
+                                                    <a href="#">Newer posts</a>
+                                                </div>
+                                            </div>
+                                        </nav>                                        
+                                    </div>                                    
+                                </div>
+                            </div>
+                            
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-6 col-lg-offset-1">
+                        <div class="footer-wid">
+                            <h2 class="wid-title">A<span>vengers</span></h2>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis 
+nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan,</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6">
+                        <div class="footer-wid">
+                            <h2 class="wid-title">Newsletter</h2>
+                            <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                            
+                            <div class="newsletter-form">
+                                <form action="index.html">
+                                    <input class="shadow-z-1" type="email" placeholder="Your Email address">
+                                    <button type="submit" class="btn btn-material-red">Subscribe Now!</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="footer-bottom">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="copyright-text">
+                                        <p>Copyright &copy; 2020.Company name All rights reserved.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="social-links footer-social-links">
+                                        <a class="btn social-link" href="javascript:void(0)"><i class="fa fa-facebook"></i> <div class="ripple-wrapper"></div></a>
+                                        <a class="btn social-link" href="javascript:void(0)"><i class="fa fa-twitter"></i> <div class="ripple-wrapper"></div></a>
+                                        <a class="btn social-link" href="javascript:void(0)"><i class="fa fa-google-plus"></i> <div class="ripple-wrapper"></div></a>
+                                        <a class="btn social-link" href="javascript:void(0)"><i class="fa fa-youtube"></i> <div class="ripple-wrapper"></div></a>
+                                        <a class="btn social-link" href="javascript:void(0)"><i class="fa fa-linkedin"></i> <div class="ripple-wrapper"></div></a>
+                                    </div>                        
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     
-</head>
-<body>
-    <div id="tool">
-        <div class="new">新闻</div>
-        <div class="work">工作台</div>
-        <div class="my">我的</div>
-    </div>
-    <div id="new">
-        <div class="title">
-            <span>国内</span>
-            <span>国外</span>
-        </div>
-        <div class="cctv">新闻联播</div>
-        <div class="active">
-            <p>正在搜所中  Q......</p>
-        </div>
-    </div>
-    <div id="work">
-        <div class="title">
-            <span class="on">机械</span>
-            <span>金融</span>
-            <span>更多</span>
-        </div>
-        <div class="start">
-            <div>国家标准</div>
-            <div>材料</div>
-            <div>机床</div>
-        </div>
-        <div></div>
-    </div>
-    <div id="my">
-        <div class="title">
-            <img class="pic" src="./pic.jpg" alt="头像">
-            <span class="name">nickname</span>
-            <span class="set">消息</span>
-        </div>
-        <div class="link">
-            <a href="www.baidu.com" >度娘</a><a href="www.baidu.com" >度娘</a><a href="www.baidu.com" >度娘</a>
-            <a href="www.baidu.com" >度娘</a><a href="www.baidu.com" >度娘</a><a href="www.baidu.com" >度娘</a>
-        </div>
-        <div class="list">
-            <p>模具设计</p>
-            <p>心里感受</p>
-        </div>
-        <div class="time">
-            <p>最近用户很活跃!</p>
-        </div>
-    </div>
 
 
-    <script>
-       function main(){
-           var dog=document.getElementById("tool");
-           var news=dog.getElementsByClassName("new")[0];
-           var work=dog.getElementsByClassName("work")[0];
-           var my=dog.getElementsByClassName("my")[0];
-           function nShow(){
-               document.getElementById("new").style.display="none";
-               document.getElementById("work").style.display="none";
-               document.getElementById("my").style.display="none";
-           }
-           news.onclick=()=>{        nShow();        document.getElementById("new").style.display="block";   }
-           work.onclick=()=>{        nShow();        document.getElementById("work").style.display="block";   }
-           my.onclick=()=>{        nShow();        document.getElementById("my").style.display="block";   }
-       }
-       main();
-    </script>
-</body>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/material.min.js"></script>
+        <script src="js/ripples.min.js"></script>
+        <script src="js/jquery.scrolly.js"></script>
+        <script src="js/jquery.particleground.min.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
 </html>

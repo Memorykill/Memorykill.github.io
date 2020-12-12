@@ -39,10 +39,10 @@
             width:100%;           
         }
         #new .title{
-            width:95%;                 
+            width:100%;                 
             height:129px;
             /* background: red; */
-            margin:23px auto;
+            margin:0 auto;
             background-image: url(./Ntop.jpg);           
             text-align: center; 
             line-height: 30px; 
@@ -70,6 +70,10 @@
         #my .title .pic{
             width:30%;            
             border-radius: 27%;
+            
+        }
+        img{
+            width:200px;
         }
         #my .title .name{
             width:40%; 
@@ -87,8 +91,8 @@
         }
         #my .link{
             width:89%;
-            height:400px;
-            background:blue;
+            height:60px;
+            /* background:yellow; */
             margin:18px auto 0;
         }
         #my .link a{
@@ -97,7 +101,7 @@
             float:left;
             height:30px;
             line-height:30px;
-            color:yellow;
+            color:blue;
             /* background-color: blue; */
             text-align: center;
         }
@@ -106,6 +110,14 @@
             height:200px;
             margin:0 auto;
             background-color: yellowgreen; 
+        }
+        #my .list p{
+            display: list-item;
+            list-style: square outside url('./list.svg')
+        }
+        #my .time{
+            width:87%;
+            margin:0 auto;
         }
 
 
@@ -118,6 +130,23 @@
         #work .title .on{
             color: blue;
         }
+        #work .start{
+            width:99.8%;
+            height:120px;
+            background-color: yellow;
+            border-left: 1px solid yellow;
+            border-radius: 0 35px  0;
+
+        }
+        #work .start a{
+            display:block;
+            width:25%;
+            height: 40px;
+            line-height: 40px;
+            float: left;
+            text-align: center;
+        }
+
         @media (max-width: 800px) { 
             body{            
                 background-size:100% auto;
@@ -151,25 +180,43 @@
             <span>更多</span>
         </div>
         <div class="start">
-            <div>国家标准</div>
-            <div>材料</div>
-            <div>机床</div>
+            <a href="">GB/T标准 </a>
+            <a href="">CAD/CAM/CAE</a>
+            <a href="">PLC控制</a>
+            <a href="">数控机床</a>
+            <a href="">工程力学</a>
+            <a href="">维修技术</a>
+            <a href="">钳工工艺</a>
+            <a href="">材料料号</a>
+            <a href="">模具结构</a>
+            <a href="">热处理工艺</a>
+
+           
         </div>
         <div></div>
     </div>
     <div id="my">
         <div class="title">
             <img class="pic" src="./pic.jpg" alt="头像">
-            <span class="name">nickname</span>
+            <span class="name">用户名</span>
             <span class="set">消息</span>
         </div>
         <div class="link">
-            <a href="www.baidu.com" >度娘</a><a href="www.baidu.com" >度娘</a><a href="www.baidu.com" >度娘</a>
-            <a href="www.baidu.com" >度娘</a><a href="www.baidu.com" >度娘</a><a href="www.baidu.com" >度娘</a>
+            <a href="htttp://520you.club" >我的博客</a>
+            <a href="https://github.com/Memorykill/">我的开源</a>
+            <a href="www.baidu.com" >度娘</a>
+            <a href="https://www.w3school.com.cn/" >W3cschool</a>
+            <a href="https://netease-music.fe-mm.com/" >音乐网</a>
+            <a href="https://www.npmjs.com/" >npm</a>
+            <a href="http://nodejs.cn/">nodejs</a>
         </div>
         <div class="list">
             <p>模具设计</p>
-            <p>心里感受</p>
+            <p>金融学</p>
+            <p>网页设计</p>
+            <p>证书考试</p>
+            <p>心情散记</p>
+          
         </div>
         <div class="time">
             <p>最近用户很活跃!</p>

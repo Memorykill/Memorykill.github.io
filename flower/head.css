@@ -1,0 +1,284 @@
+html,body,div{margin:0;padding: 0;} .b{display: none;} a{text-decoration:none;color:black}
+html,body,#head{width:100%;}               
+#head .banner{
+    height:18px;
+    background:rgb(249,241,181);
+}
+#head .back{
+    width:100%;
+    background-color: rgb(249,241,181);
+}
+#head .back .back,#head .list,#neck,#new,#foot{
+    width:80%;
+}
+img{
+    width:100%;
+    height:120px;
+}     
+#head .back .back{                                         
+    height:95px;
+    background:rgb(253,156,156);
+    margin:0 auto;
+}
+#head .i{
+    position: absolute;
+    margin: 37px 0 37px 45px;
+}
+#head .back .list{
+    background: none;
+    width:320px;
+    position: absolute;
+    margin: 37px;
+    right:10%;
+}
+#head .list{
+    margin:0 auto;
+    background:rgb(253,156,156);
+    height:20px;               
+}
+#head .list a{
+    float: left;
+}
+.list a{                
+    width:25%;
+    text-align: center;
+    /* height:20mm; */
+}
+.list a:hover{
+    background: yellow;
+}
+
+#neck{
+    margin:0 auto;
+    
+    width:80%;
+    height:440px;
+}
+#neck .banner{
+    width:100%;
+    height:20px;
+    background: none;
+}
+#change{
+    width:100%;
+    height:400px;
+    background:rgb(248,214,166);
+}
+#new{
+    margin:0 auto;
+}
+#new .banner{
+    width:100%;
+    height:20px;
+}
+#new .new{
+    width: 100%;               
+                
+}
+.new .left{
+    position: absolute;
+    width:25%;                           
+    left: 9%;
+} 
+.left .box .thing:hover{background-color: red;}
+.left .more{background:red;border:1px solid red;} 
+.right .box .thing:hover{background-color: blue;}
+.right .more{background:blue;border:1px solid blue;}
+.center .box .thing:hover{background-color: green;}
+.center .more{background:green;border:1px solid green;}           
+.new .center{
+    width:31.25%;                
+    margin:0 auto;       
+}
+.new .right{
+    position: absolute;
+    width: 25%;                
+    right: 9%;                
+}
+.left h2{
+    border-bottom: 1px dashed red;
+}
+.right h2{
+    border-bottom: 1px dashed blue;
+}
+.center h2{
+    border-bottom: 1px dashed green;
+}
+.box .thing{
+    display: block;
+    width: 89%;
+    height:45px;
+    margin:5px;
+    overflow: hidden;
+    line-height: 20px;
+    font-size:19px;
+    overflow: hidden;
+}
+.new .more{
+    display: block;
+    width:60px;
+    height:30px;
+    line-height: 30px;
+    text-align: center;
+    margin:0 10px 0 auto;
+    
+    border-radius: 17px;
+}
+
+#foot{
+    margin: 0 auto;
+    
+   
+}
+#foot .banner{
+    width: 100%;
+    height:18px;
+    background: none;
+}
+#foot .content{
+    width:100%;
+    background: rgb(237,237,237);
+    /* padding: 5px 0 5px 30px; */
+}
+.content a:first-child{
+    margin-left:40px;
+}
+
+@media (max-width: 1180px) {
+    .a{display: none;}
+    .b{display: block;}
+    #head .back .back,#head .list,#neck,#new,#foot{
+        width:100%;
+    }
+    .new .left,.new .right,.new .center{
+        position: relative;
+        width: 100%;
+        left: 0;
+        right:0;
+        margin:40px 0;
+    }
+    img{
+        display: block;
+        width:225px;
+        margin:0 auto;
+    }
+}
+#change img{
+    width:100%;height:100%;
+    display:none;
+}
+#change img.on{
+    display: block;
+}
+
+
+
+/* member */
+            p{
+                margin: 0;
+            }
+            #member .banner,.mem p{
+                width: 100%;
+            }
+            #member{
+                width:80%;
+                margin: 0 auto;
+            }
+            #member .banner{
+                width:100%;
+                height:20px;
+            }
+        
+            .mem{
+                margin:20px;
+                display: inline-table;
+            }
+            .mem img{
+                display: block;
+                width:94px;       
+                height: 94px;
+                margin:0 auto;
+                border:1px solid white;
+                border-radius: 50%;
+            }
+            .mem .nick{
+                font-size: 0.8em;
+                color:orange;
+                background: green;
+            }
+            .mem p{
+                height:25px;
+                line-height: 25px;
+                text-align: center;
+                font-size: 20px;
+            }
+            @media (max-width: 1180px) {
+                #member{width:100%}           
+            } 
+            
+/* download */
+#down .banner,#down .down{
+    margin:0 auto;
+    width:100%;
+}
+#down{
+    width:80%;  
+    margin: 0 auto;          
+}
+#down .banner{
+    height:20px;
+}
+#down .down{            
+    margin:0 auto;           
+}
+.down a{
+    display: block;
+    padding: 25px 0 1px 20px;
+    font-size:32px;
+    color:rgb(127,30,30);
+} 
+.down a time{
+    color:blue;
+    font-size: 0.7em;
+    margin-left: 3px;
+}
+#showMark{
+    border-top:20px solid auto ;
+    min-height: 500px;
+}
+/* @media (max-width:727x) {
+    #down{width:100%}
+    .down a{
+        padding:25px 0 1px 5px;
+    }
+}    */
+
+
+/* playmusci */
+#musicPIC{
+    width: 88px;
+    height: 88px;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+#musicPIC.on{
+   border:0.5px solid blue;
+   border-radius: 50%;
+   
+   animation:disc 5s linear infinite;
+-webkit-animation:disc 5s linear infinite alternate; /*Safari and Chrome*/
+animation-direction:alternate;
+-webkit-animation-direction:alternate;
+}
+@keyframes disc
+{
+from {transform: rotate(0deg);}
+to { transform: rotate(360deg);}
+}
+
+@-webkit-keyframes disc /*Safari and Chrome*/
+{
+    from {transform: rotate(0deg);}
+    to { transform: rotate(360deg);}
+}

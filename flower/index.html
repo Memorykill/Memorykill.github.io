@@ -1,0 +1,267 @@
+<html>
+    <head>  
+        <title>花之舞协会</title>        
+        <link rel='stylesheet' type='text/css' media='screen' href='head.css'>
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <style>
+            #member,#down{
+                display: none;
+            }
+           
+        </style>
+    </head>
+    <body> 
+        <audio id="mymusic" src="https://music.163.com/song/media/outer/url?id=25706282.mp3"></audio>
+        <img id="musicPIC" onclick=" playPause()" src="https://p2.music.126.net/d541jx7SqoDzVkenhmtg6g==/19193074974743620.jpg?param=90y90" alt=""/>
+        <div id="head">
+            <div class="banner">
+               
+            </div>   
+            <div class=back>         
+                <div class="back">
+                    <div class="i">花之舞协会官网</div>
+                    <div class="list a">
+                        <a onclick="page(0)">首页</a>                    
+                        <a onclick="page(1)" href="#member">协会成员</a>
+                        <a onclick="page(2)" href="#down">协会新闻</a>                    
+                        <a href="https://www.wtc.edu.cn/" alt="武汉职业技术学院">大学链接</a>
+                    </div>
+                </div>
+            </div>
+            <div class="list b">
+                <a onclick="page(0)">首页</a>                    
+                <a onclick="page(1)" href="#member">协会成员</a>
+                <a onclick="page(2)" href="#down">协会新闻</a>
+                <a href="http://www.wtc.edu.cn" alt="武汉职业技术学院">大学链接</a>
+            </div>
+        </div>
+
+        
+        <div id="neck">
+            <div class="banner"></div>
+            <div id="change">
+                <img src="img/home1.jpg" alt="">
+                <img src="img/home2.jpeg"/>              
+               
+                <img src="img/home3.jpg"/>
+            </div>
+        </div>        
+
+        <div id="new">
+            <div class="banner"></div>
+            <hr/>
+            <div class="new">
+                <div class="left">
+                    <div class="box">
+                        <img onclick="getmore('1.md')" src="img/new1.jpg"/>
+                        <h2>建站成功！</h2>
+                        <a class="thing" onclick="getmore('1.md')" href="#showMark">点击我了解下花之舞协会</a>
+                        <a class="thing" onclick="getmore('README.md','http://520you.club/flower/')">建站手册</a>
+                        <a class="more">更多</a>
+                    </div>
+                   
+                </div>
+                <div class="right">
+                    <div class="box">
+                        <img src="http://www.wheqx.cn/UpFile/201632234785409.JPG"/>
+                        <h2>活动安排</h2>
+                        <a class="thing">祝同学们考试顺利</a>
+                        
+                        <a class="more">更多</a>
+                    </div>
+                </div>
+                <div class="center">
+                    <div class="box">
+                        <img src="http://www.wheqx.cn/upfile/202004041354136306.png"/>
+                         <h2>学校新闻</h2>
+                        <a class="thing" href="http://www.wheqx.cn/html/xuexiaoxinwen/3592.html">我校教职工深切悼念抗击疫情斗争牺牲烈士和逝世同胞-4.4</a>
+                        <a class="thing" href="http://www.wheqx.cn/html/xuexiaoxinwen/3593.html">二轻学子的防疫日志</a>
+                        
+                        <a class="more">更多</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+
+    
+     
+    <div id="member">
+        <hr/>   
+        <div class="banner">图片来源qq空间</div>
+
+        <div class="teacher">
+            <h3>老师</h3>
+          
+        </div>
+        <div class="student">
+            <h3>学生</h3>
+            
+        </div>
+    </div>
+    
+
+    
+    <div id="down">
+        <hr/>
+        <div class="banner"></div>        
+        <div class="down">
+            <h3>快来看看有什么新闻吧！</h3>
+            <a i="1.md">花之舞协会官网<time>2021年1月3日</time></a>
+            <a i="2.md">我们一定会照顾好花协的 <time>2021年3月1日</time></a>
+            
+            <a i="help.md">使用文档<time>2021年1月3日</time></a>
+            <div id="showMark"></div>
+        </div>
+    </div>
+
+
+        <div id="foot">
+            <div class="banner"></div>
+            <div class="content">
+                <a>使用说明 | </a>
+                <a href="http://520you.club" color="red">创作者：申振升《《《《--</a>
+            </div>
+        </div>
+
+      
+
+        <script>
+            const pageA=document.getElementById("neck");
+            const pageB=document.getElementById("member");
+            const pageC=document.getElementById("down");
+
+            //const Mpage=document.getElementById("head");
+            const Npage=document.getElementById("new");
+            function page(p=Number){
+                p==undefined?p=1:null;
+                //pageA.style.display="none";
+                pageB.style.display="none";
+                pageC.style.display="none";
+                //Mpage.style.display="none";
+                Npage.style.display="none";
+                switch(p){
+                    case 0:
+                        Npage.style.display=pageA.style.display="block";
+                        break;
+                    case 1:
+                        pageB.style.display="block";
+                        break;
+                    case 2:
+                        pageC.style.display="block";
+                        break;
+                    default:                    
+                        Mpage.style.display=pageA.style.display="block";
+                        break;                     
+                        
+                }
+            }
+            function getdatab(){                
+                var info={
+                    search:[],
+                    data:[],
+                };
+                function o(url,data){
+                    let ishave=false;
+                    let im;
+                   // console.log("查找"+url)
+                   // console.log(info)
+                    for(let i=0;i<info.search.length;i++){
+                        if(info.search[i]==url){
+                            ishave=true;
+                            im=i;
+                            break;
+                        }                        
+                    }                   
+                    switch(arguments.length){
+                        case 1:                            
+                            return {ishave:ishave,data:info.data[im]};
+                            break;
+                        case 2:
+                            info.search.push(url);
+                            info.data.push(data);                        
+                            return info;
+                            break;
+                        default:
+                            break;
+                            return "无效的参数"
+                    }                    
+                }  
+                return o
+            }
+            var getdata=getdatab();
+            function getMD(url,baseurl){
+                var url=url||"1.md",
+                    baseurl=baseurl||"http://520you.club/flower/md/";              
+                // 创建XMLHttpRequest对象
+                var xmlhttp;
+                if (window.XMLHttpRequest)
+                {
+                    // IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
+                    xmlhttp=new XMLHttpRequest();
+                }
+                else
+                {
+                    // IE6, IE5 浏览器执行代码
+                    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+                }                
+                // 得到服务器响应后，对得到的Markdown文档进行解析
+                xmlhttp.onreadystatechange=function()
+                {
+                    if (xmlhttp.readyState==4 && xmlhttp.status==200)
+                    {
+                        // 这里调用了marked框架中的marked函数实现Markdown2HTML的解析
+                       if(getdata(url).ishave){                           
+                           console.log(getdata(url).ishave,"不增加数据");                          
+                       }else{
+                            console.log("增加数据")
+                            getdata(url,xmlhttp.responseText).data
+                       }
+                        document.getElementById("showMark").innerHTML=marked(xmlhttp.responseText)
+                        
+                    }
+                }
+                
+                
+                // 向服务器发送请求，获取你需要的Markdown文档
+                xmlhttp.open("GET",baseurl+url,true);
+                xmlhttp.send();
+                return xmlhttp.responseText
+            }
+            function getmore(url,baseurl){
+                page(2);
+                var url=url||"1.md",
+                    baseurl=baseurl||"http://520you.club/flower/md/"; 
+                if(getdata(url).ishave){
+                        console.log("我"+getdata(url).ishave+"数据，正在使用")
+                        document.getElementById("showMark").innerHTML=marked(getdata(url).data)
+                }else{
+                        console.log("第一次请求数据并处理"+url)
+                        getMD(url,baseurl);
+                }  
+            }
+            !function (){
+                let a=pageC.getElementsByClassName("down")[0];
+                let el=a.getElementsByTagName("a");
+                let show=document.getElementById("showMark");
+                //console.log(el[0])
+                for(let i=0;i<el.length;i++){
+                    el[i].onclick=(e)=>{
+                        let url=el[i].getAttribute("i").toString(); console.log(getdata(el[i].getAttribute("i")))
+                      if(getdata(url).ishave){
+                        console.log("我"+getdata(url).ishave+"数据，正在使用")
+                        document.getElementById("showMark").innerHTML=marked(getdata(url).data)
+                      }else{
+                          console.log("第一次请求数据并处理"+url)
+                            getMD(url);
+                      }                      
+                    }
+                    el[i].href="#showMark";
+                }
+                el[0].click();
+            }()
+        </script>
+        <script src="data.js"></script>
+    </body>
+</html>

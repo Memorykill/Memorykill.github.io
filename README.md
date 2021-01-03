@@ -14,7 +14,7 @@
 * [考试系统](http://520you.club/exam)
 * [以前的博客](http://520you.club/page/author)
 * [Memorykill.github.io](https://memorykill.github.io/)
-* [申振升的网站](https://memorykill.github.io/)
+* [申振升的网站](https://520you.club/)
 # 想联系我吗？
 - QQ：2151057013 
 - 手机号:+86 13995613643 

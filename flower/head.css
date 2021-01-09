@@ -148,7 +148,7 @@ img{
 @media (max-width: 1180px) {
     .a{display: none;}
     .b{display: block;}
-    #head .back .back,#head .list,#neck,#new,#foot{
+    #head .back .back,#head .list,#neck,#new,#foot,#change a help{
         width:100%;
     }
     .new .left,.new .right,.new .center{

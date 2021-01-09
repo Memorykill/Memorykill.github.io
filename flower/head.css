@@ -66,6 +66,7 @@ img{
 }
 #new{
     margin:0 auto;
+    font-size:1.6em;
 }
 #new .banner{
     width:100%;
@@ -128,7 +129,7 @@ img{
 #foot{
     margin: 0 auto;
     
-   
+   font-size:25px;
 }
 #foot .banner{
     width: 100%;
@@ -159,16 +160,30 @@ img{
     }
     img{
         display: block;
-        width:225px;
+        width:80%;
+        height:auto;
         margin:0 auto;
     }
 }
-#change img{
+#change a{
     width:100%;height:100%;
     display:none;
 }
-#change img.on{
+#change a img{
+    width:100%;height:100%;
+}
+#change a.on{
     display: block;
+}
+#change help{    
+    display: block;
+    width:80%;
+    height:88px;
+    position: absolute;
+    background-color: rgba(120,124,124,0.3);
+    margin:-88px 0 0;
+    font-size:33px;    
+    font-weight: 800;
 }
 
 
@@ -262,6 +277,11 @@ img{
     top: 0;
     right: 0;
 }
+#musicPIC:after{
+    content:"▼";    
+    
+    position: absolute; right: 10px; top: 0;   
+}
 #musicPIC.on{
    border:0.5px solid blue;
    border-radius: 50%;
@@ -281,4 +301,9 @@ to { transform: rotate(360deg);}
 {
     from {transform: rotate(0deg);}
     to { transform: rotate(360deg);}
+}
+
+#change img:first-child:after{
+    content:"欢迎访问";
+    position: absolute;
 }

@@ -97,7 +97,7 @@ teacher.appendChild(mem);
 }
 
 //roundpic
-const change=document.getElementById("change").getElementsByTagName("img");
+const change=document.getElementById("change").getElementsByTagName("a");
 var changeF=0;
 
 function chang(){
@@ -110,7 +110,7 @@ change[changeF].className="on";
 changeF+1>=change.length?changeF=0:changeF++;
 }
 chang()
-setInterval("chang()", 2000);
+setInterval("chang()", 2500);
 
 //playmusci
 function playPause()

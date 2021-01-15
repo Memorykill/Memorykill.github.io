@@ -1,11 +1,12 @@
+<script>
+    
+</script>
 <!DOCTYPE html>
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>创业演示稿</title>
-    <script src="https://cdn.staticfile.org/jquery/3.4.0/jquery.min.js">
-    </script>
     <style>
         #work,#my{display:none};        #new{display: block;}
         html,body,#back{width:100%;height:100%;margin:0;padding: 0;}
@@ -45,7 +46,7 @@
             height:129px;
             /* background: red; */
             margin:0 auto;
-            /* background-image: url(./Ntop.jpg);            */
+            background-image: url(./Ntop.jpg);           
             text-align: center; 
             line-height: 30px; 
         }      
@@ -53,7 +54,7 @@
             width:93%;      
             height:300px;                                                                                                                                               ;
             margin:13px auto;
-            /* background-image: url(./Nknew.jpg); */
+            background-image: url(./Nnew.jpg);
       
             /* background: blue; */
         }
@@ -61,7 +62,7 @@
             width:90%;
             height:200px;
             margin:10px auto;
-            /* background-image: url(./Nknative.jpg); */
+            background-image: url(./Nnative.jpg);
             /* background:blue; */
         }
         #my .title {
@@ -115,7 +116,7 @@
         }
         #my .list p{
             display: list-item;
-            /* list-style: square outside url('./list.svg') */
+            list-style: square outside url('./list.svg')
         }
         #my .time{
             width:87%;
@@ -169,17 +170,17 @@
             <span>国内</span>
             <span>国外</span>
         </div>
-        <div class="cctv">新闻联播</div>        
+        <div class="cctv">新闻联播</div>
         <div class="active">
             <p>正在搜所中  Q......</p>
         </div>
     </div>
     <div id="work">
         <div class="title">
-            <span sort="help">使用说明书</span>
-            <span sort="" class="on">机械</span>
-            <span sort="money">金融</span>
-            <span sort="set">更多</span>
+            <span>新闻感受</span>
+            <span class="on">机械</span>
+            <span>金融</span>
+            <span>更多</span>
         </div>
         <div class="start">
             <a href="">GB/T标准 </a>
@@ -204,7 +205,7 @@
             <span class="set">消息</span>
         </div>
         <div class="link">
-            <a href="http://520you.club" >我的博客</a>
+            <a href="htttp://520you.club" >我的博客</a>
             <a href="https://github.com/Memorykill/">我的开源</a>
             <a href="www.baidu.com" >度娘</a>
             <a href="https://www.w3school.com.cn/" >W3cschool</a>
@@ -223,7 +224,9 @@
         <div class="time">
             <p>最近用户很活跃!</p>
         </div>
-    </div> 
+    </div>
+
+
 
     <script>
        function main(){
@@ -239,45 +242,8 @@
            news.onclick=()=>{        nShow();        document.getElementById("new").style.display="block";   }
            work.onclick=()=>{        nShow();        document.getElementById("work").style.display="block";   }
            my.onclick=()=>{        nShow();        document.getElementById("my").style.display="block";   }
-           //↑ main tab ↑
-           
-          
        }
        main();
-       function tool(data){
-           this.father=document.getElementById("work");
-            this.data=data;
-            this.state={
-                title:0,
-                start:0,
-            }
-            this.showTitle=function(a){
-               for(let i=0;i<this.data.work.title.length;i++){
-                    let el=document.createElement("span");
-                    i==0?el.className="on":null;
-                    el.style.sort=this.data.work.title[i].href;
-                    this.father.getElementsByClassName("title")[0].appendChild(el);
-                    console.log(el);
-                    // this.father.getElementsByClassName("title")[0].getElementsByTagName("span")[i].innerHTML=this.data.workk.title[i].title
-               }
-            }    
-            this.start=()=>{
-                this.showTitle();
-            }       
-       }
-       var data={
-                work:{
-                    title:[
-                        {title:"帮助文档",href:"help"},
-                        {title:"模具设计与制造",href:"make"},
-                        {title:"money",href:"money"},                       
-                    ],
-                }
-      }
-       var work=new tool(data);
-       work.start();
-
-
     </script>
 </body>
 </html>

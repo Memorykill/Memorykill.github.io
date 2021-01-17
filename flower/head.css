@@ -164,6 +164,7 @@ img{
         height:auto;
         margin:0 auto;
     }
+
 }
 #change a{
     width:100%;height:100%;
@@ -261,6 +262,10 @@ img{
     border-top:20px solid auto ;
     min-height: 500px;
 }
+#showMark img{
+    width:100%;
+    height:auto;
+}
 /* @media (max-width:727x) {
     #down{width:100%}
     .down a{
@@ -303,7 +308,3 @@ to { transform: rotate(360deg);}
     to { transform: rotate(360deg);}
 }
 
-#change img:first-child:after{
-    content:"欢迎访问";
-    position: absolute;
-}

@@ -40,15 +40,15 @@
         <div id="neck">
             <div class="banner"></div>
             <div id="change">
-                <a href="">
+                <a onclick="getmore('2.md')" href="#showMark">
                     <img src="img/home1.jpg"/>
                     <help>祝学姐实习顺利</help>
                 </a>
-                <a href="">
+                <a onclick="getmore('1.md')" href="#showMark">
                     <img src="img/home2.jpg"/>
                     <help>花之舞协会建站成功</help>
                 </a>        
-                <a href="">
+                <a onclick="getmore('3.md')" href="#showMark">
                     <img src="img/home3.jpg"/>
                     <help>花之舞协会见面会顺利召开</help>
                 </a>
@@ -61,39 +61,35 @@
             <div class="new">
                 <div class="left">
                     <div class="box">
-                        <img onclick="getmore('1.md')" src="img/new1.jpg"/>
+                        <img onclick="getmore('1.md')" src="img/home2.jpg"/>
                         <h2>建站成功！</h2>
                         <a class="thing" onclick="getmore('1.md')" href="#showMark">>点击我了解下花之舞协会</a>
-                        <a class="thing" onclick="getmore('README.md','http://520you.club/flower/')">>建站手册></a>
-                        <a class="more"  onclick="getmore('1.md')">更多</a>
+                        <a class="thing" onclick="getmore('README.md','http://520you.club/flower/')" href="#showMark">>建站手册></a>
+                        <a class="more"  onclick="getmore('1.md')" href="#showMark">更多</a>
                     </div>
                    
                 </div>
                 <div class="right">
                     <div class="box">
-                        <img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3278012239,3644068627&fm=26&gp=0.jpg"/>
+                        <img src="md/img/李钰.jpg"/>
                         <h2>花协2020活动目录</h2>
-                        <a class="thing">>第七届花协大作品展示</a>
+                        <a class="thing">>第七届花协作品展示</a>
                         <a class="thing" href="">花之舞协会见面会顺利召开</a>
                         <a class="more" onclick="getmore('1.md')">更多</a>
                     </div>
                 </div>
                 <div class="center">
                     <div class="box">
-                        <img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2854367329,664216268&fm=11&gp=0.jpg"/>
-                         <h2>祝学姐学长实习顺利</h2>
+                        <img src="img/home1.jpg"/>
+                         <h2>祝学姐实习顺利</h2>
                         <a class="thing" onclick="getmore('2.md')" href="#showMark">感谢学长学姐的照顾，我们会照顾好花协，让她更加灿烂</a>
-                        <a class="thing" href="">>花协之歌></a>
-                        
+                        <a class="thing" onclick="playPause()" href="#musicPIC" >>花协之歌></a>                        
                         <a class="more" onclick="getmore('1.md')">更多</a>
                     </div>
                 </div>
                 
             </div>
-        </div>
-
-
-    
+        </div>   
      
     <div id="member">
         <hr/>   
@@ -101,16 +97,12 @@
 
         <div class="teacher">
             <h3>老师</h3>
-          
         </div>
         <div class="student">
-            <h3>学生</h3>
-            
+            <h3>学生</h3>            
         </div>
     </div>
-    
-
-    
+        
     <div id="down">
         <hr/>
         <div class="banner"></div>        
@@ -121,10 +113,10 @@
             <a i="3.md">花之舞协会见面会顺利召开</a>
             <a i="race7.md">第七届花协大作品展示<time>2020年12月25日</time></a>
             <a i="help.md">使用文档<time>2021年1月3日</time></a>
-            <div id="showMark"></div>
+            <hr/>
+            <div id="showMark">请你连接网络后再试一下</div>
         </div>
     </div>
-
 
         <div id="foot">
             <div class="banner"></div>
@@ -133,8 +125,6 @@
                 <a href="http://520you.club" color="red">创作者：申振升《《《《--</a>
             </div>
         </div>
-
-      
 
         <script>
             const pageA=document.getElementById("neck");

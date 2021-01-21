@@ -13,7 +13,7 @@ html,body,#head{width:100%;}
 }
 img{
     width:100%;
-    height:120px;
+    height:270px;
 }     
 #head .back .back{                                         
     height:95px;
@@ -49,10 +49,9 @@ img{
 }
 
 #neck{
-    margin:0 auto;
-    
+    margin:0 auto;    
     width:80%;
-    height:440px;
+    /* height:440px; */
 }
 #neck .banner{
     width:100%;
@@ -150,6 +149,12 @@ img{
     .b{display: block;}
     #head .back .back,#head .list,#neck,#new,#foot,#change a help{
         width:100%;
+    }
+    body #down{
+        width:96%;
+    }
+    #change{
+        height:500px;
     }
     .new .left,.new .right,.new .center{
         position: relative;
@@ -259,7 +264,8 @@ img{
     margin-left: 3px;
 }
 #showMark{
-    border-top:20px solid auto ;
+    border-left:1px solid saddlebrown;
+    background: antiquewhite;
     min-height: 500px;
 }
 #showMark img{

@@ -272,6 +272,11 @@ img{
     width:100%;
     height:auto;
 }
+#showMark a{
+    display: inline;
+    position: relative;
+    font-size:1em;
+}
 /* @media (max-width:727x) {
     #down{width:100%}
     .down a{

@@ -20,7 +20,7 @@ tea:[
 };
 
 var href="http://qlogo4.store.qq.com/qzone/";
-var end="/50";
+var end="/100";
 var student=document.getElementById("member").getElementsByClassName("student")[0];
 var teacher=document.getElementById("member").getElementsByClassName("teacher")[0];
 for(var i=0;i<qq.stu.length;i++){

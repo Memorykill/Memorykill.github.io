@@ -222,10 +222,20 @@ img{
                 border:1px solid white;
                 border-radius: 50%;
             }
-            .mem .nick{
+             .mem .nick{
+                font-size: 0.8em;
+                color:white;
+                background: orangered;
+            }            
+            .student .mem .nick{
                 font-size: 0.8em;
                 color:orange;
                 background: green;
+            }
+            .mem[name*="申振升"]::after{
+               content: url('./img/user.svg');               
+               position: absolute;
+               margin: -58px 0 0 79px;
             }
             .mem p{
                 height:25px;

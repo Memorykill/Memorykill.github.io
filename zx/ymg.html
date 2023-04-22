@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Lightly-HTML-Project</title>
+    <!-- <link type="text/css" rel="stylesheet" href="css/style.css"/> -->
+    <script type="text/javascript" src="js/script.js"></script>
+    <style>
+        *{margin:0;padding:0;}.center{text-align: center;}
+        body>div{
+            width: 100%;
+        }
+
+        #one{
+            text-align: left;
+            color:white;
+            background-color: black;
+        }
+        #one>.right{
+            position: absolute;
+            right: 0;
+            color:white;
+            background-color: black;
+        }
+
+        #two{
+            height:4ovh;
+            overflow: hidden;
+        }
+        #two>.center{
+            text-align: center;
+        }
+        #two .say{
+            height: 40vh;
+            padding-left:20px;
+            overflow:hidden scroll;
+        }
+        #two>.say>p{
+            padding:10px 0 0;
+            width: 95vw;
+            margin:0 auto;
+        }
+        #three{
+            text-align: center;
+        }
+        #msg{      
+            text-align: left;           
+        }
+    </style>
+    <script>      
+        let obj=document.getElementById("msg");  
+ 
+        console.log(date(29));
+        function copy(i){                  
+            i.parentNode.getElementsByTagName("input")[0].select();
+            
+            document.execCommand("copy");
+            
+            
+            obj.value+="\n"+i.parentNode.getElementsByTagName("input")[0].value;            
+        }
+        function date(num = 1,date = false) {
+　　if (!date) {
+　　　　date = new Date();//没有传入值时,默认是当前日期
+　　　　date = date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate();
+　　}
+　　date += " 00:00:00";//设置为当天凌晨12点
+　　date = Date.parse(new Date(date))/1000;//转换为时间戳
+　　date += (86400) * num;//修改后的时间戳
+　　var newDate = new Date(parseInt(date) * 1000);//转换为时间
+　　return newDate.getFullYear() + '-' + (newDate.getMonth() + 1) + '-' + newDate.getDate();
+}
+    </script>
+</head>
+<body>
+    
+
+    <div id="one">
+        <span>调额话术</span>
+       <select class="right">
+           <option value="">目录</option>
+           <option value="">非调额</option>
+           <option value="">促刷</option>
+           <option value="">禁呼</option>           
+       </select>
+        
+    </div>
+
+    
+    <div id="two">
+        <p class="center">
+            <a href="">产介</a>
+            <a href="">温馨提示</a>
+            <a href="">核对短信</a>
+        </p>
+
+        <div class="say">
+            <p>
+                您好！中信信用卡，请问是__先生吧？
+            </p>
+
+            <p>
+                很高兴为您服务，我姓申，通话有录音，来电话考虑到消费高峰期，给您带到一个圆梦金业务，有__元，登记在您的信用卡里做备用，有需要的时候拿信用卡可以一笔全部消费出来，这样说听得清楚吧？(有__元不占您固额，放在您的信用卡里做备用)
+            </p>
+
+            <p>
+                有一个消费门槛，最低5百,最高1万，比如您设为2千，只有单笔消费达到≥2千才会分期来还有分期利息，用的时候＜2千就用您卡里的固定额度，正常用正常还，不会分期也没有费用，我这样说好理解吧？(有需要的时候最少消费2千，最高可以把__全部消费出来)
+            </p>
+
+            <p>
+                期数有3-36期,很多用户都是设置36期,用1w元，每个月分期利息75，总分期利息2千7，没有其他费用，您有其他期数消费门槛也乐意为您介绍，您看没有其他问题，给您走个流程，把金额登记下来，有需要了就可以直接去用了，好吧？(有效期30天，三十天内您可以考虑用不用，用不到到放在那里就好了)
+            </p>
+
+            <p>
+                您的圆梦金当前可分期金额__元，其中__元是给您调升的一次性可申请专项额度，是优先使用的，刷卡满额优先使用专项额度，用完后用固定额度，具体给您举个例子，消费__元分期时不占您固额，只有分期利息占用，消费超出__元，使用占您固额，这是一款消费预约分期服务，有效期30天，用不到到期会自动取消，有需要尽快去用，那我这边就为您办起点2千启用分36期的圆梦金分期业务了好吧？
+            </p>
+
+
+            <p>
+                恭喜您，您的核身通过了，为了保障您的个人权益，温馨提示如下，如有任何疑问，请及时打断我，麻烦您不要挂机。
+            </p>
+
+            <p>
+                已为您尾号__的信用卡开通了圆梦金分期业务，有效期30天，期间圆梦金可分期金额及有效期期会随着你用卡，资信等状况变化，如果需要查询，可在实际消费当天登录我们的动卡空间或打我们的客服进行查询，金额以系统显示为准。
+            </p>
+
+            <p>
+                用到后分期利息在账单明细中体现为利息圆梦金分期，为您登记的圆梦金当前可分期金额为__，超出您可用额度部分，是我行为您调升的一次性可申请专项额度，是优先使用的。
+                起始分期金额就是消费门槛，就是2千元，用到2千元就会分期，分为36期，年化利率16.24%，请问起始分期金额，分期期数，年华利率等内容，都知道了吧？
+            </p>
+
+            <p>
+                消费满额优先使用专项额度，用完后会用固额，专项额度不能循环用，会随着每个月还款逐渐递减，减少幅度不大于当月还款金额，如果同时用到了固定额度，先恢复专项额度，再恢复固定额度，每期分期利息上账后会循环占用一期固额。
+            </p>
+
+            <p>
+                本次办理的业务将启用专项额度，同时要有稳定的工作或收入来确保用到之后每个月按时还款，您是知悉并同意的，同意吧？
+            </p>
+
+            <p>
+                圆梦金不能用于房产、金融、公立医院、政府服务、预授权、博彩等交易，如您用TSM token，包括华为支付，苹果支付等消费，会使用永久额度，会正常分期。
+            </p>
+
+            <p>
+                圆梦金实际消费后，不能对已经分期的金额和期数进行修改，如果需要修改，可在实际消费前，登录我们的动卡空间或拨打客服查询。如需提前还款，需要在记账日前3天致电客服申请，收1-3%做违约金，但是未收取分期利息不再收，详情查阅<<圆梦金分期 业务合约>>。
+            </p>
+
+            <p>
+                已分期金额不享受最低还款，若您未按时全额还款，我行有权要求您一次性还清分期未还本金及分期利息，并加收违约金等相关费用，逾期还会影响个人征信，费用收取标准及年华利率等内容，短信里有<<圆梦金产品条款与细则>>链接查看，关于以上重要提示内容，您都清楚了吧？
+            </p>
+
+            <p>
+                好的，最后一个问题，因圆梦金登记为系统实时审批，会查询您的人行征信报告，您不用担心，如有资信变化会影响申请结果，现在，我将按跟您沟通的金额及年华利率为您下单申请登记了，可以吧？
+            </p>
+
+            <p>
+                好的，已为您下发办理成功的短信，与您核对下短信内容：“圆梦金可分期金额__元，起始分期金额__，单笔消费达到__元时分期，”是一样的吧？
+            </p>
+
+            <p>
+                好的，您的圆梦金已经登记到您的信用卡里了，后期有需要直接拿信用卡刷卡消费就可以了，绑定微信支付宝消费也可以，附近优质商家也可以扫码消费，不过要注意，消费时最少需要消费xx元才会用到圆梦金，一笔全部消费出来也行，如果有限额消费不出来就5w5w的刷也可以，但是同时要注意圆梦金实时变化的，十天半个月不用会减少，30天有效期没到圆梦金可能就没有了，平常购物旅游装修买车有需要抓紧去用，今天明天就把他消费出来，好吧？
+            </p>
+        </div>
+
+        
+    </div>
+
+    <div id="three">
+            <p>身份证后四位：
+                <input type="text" placeholder="身份证后四位"/>
+                <span onclick="copy(this)"> 复制 </span>
+                
+            </p>
+
+            <p>信用卡后四位：
+                <input type="text" placeholder="信用卡后四位"/>
+                <span onclick="copy(this)">复制</span>
+                </span>
+            </p>
+
+            <p>出生年月日：
+                <input type="text" placeholder="出生年月日" />
+                 <span onclick="copy(this)"> 复制 </span>
+            </p>
+    </div>
+
+    
+    <div class="center">
+           <textarea id="msg" >ewr</textarea>
+    </div>
+
+ 
+    
+</body>
+</html>
